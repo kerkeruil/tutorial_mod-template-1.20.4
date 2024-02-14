@@ -2,6 +2,7 @@ package net.kerkeruil.tut_mod;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.fabricmc.fabric.api.registry.FuelRegistry;
 import net.kerkeruil.tut_mod.block.ModBlocks;
 import net.kerkeruil.tut_mod.item.ModItemGroups;
 import net.kerkeruil.tut_mod.item.ModItems;
@@ -23,5 +24,7 @@ public class TutorialMod implements ModInitializer {
 		ModItemGroups.registerItemGroups();
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
+
+		FuelRegistry.INSTANCE.add(ModItems.COAL_BRIQUETTE, 200);
 	}
 }

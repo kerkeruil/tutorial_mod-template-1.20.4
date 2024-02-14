@@ -3,3 +3,10 @@
 /gamemode survival
 /give @a minecraft:wooden_pickaxe
 /gamemode survival
+/give @a tutorialmod:metal_detector
+/give @a tutorialmod:sound_block
+/give @a tutorialmod:tomato
+/give @a tut
+/give @a tutorialmod:coal_briquette
+/gamemode creative
+/gamemode survival

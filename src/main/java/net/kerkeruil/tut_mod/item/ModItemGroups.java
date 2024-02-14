@@ -17,8 +17,13 @@ public class ModItemGroups {
                     .icon(() -> new ItemStack(ModItems.RUBY)).entries((displayContext, entries) -> {
                         entries.add(ModItems.RUBY);
                         entries.add(ModItems.RAW_RUBY);
+                        entries.add(ModItems.METAL_DETECTOR);
+                        entries.add(ModItems.TOMATO);
+                        entries.add(ModItems.COAL_BRIQUETTE);
+
                         entries.add(ModBlocks.RUBY_BLOCK);
                         entries.add(ModBlocks.RAW_RUBY_BLOCK);
+                        entries.add(ModBlocks.SOUND_BLOCK);
 
 
                     }).build());
