@@ -1,0 +1,5 @@
+/gamemode survival
+/give @a tutorialmod:ruby_block 3
+/gamemode survival
+/give @a minecraft:wooden_pickaxe
+/gamemode survival
