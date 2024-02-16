@@ -11,6 +11,7 @@ import net.minecraft.item.Items;
 import net.minecraft.recipe.ShapedRecipe;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.util.Identifier;
+import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
 
@@ -49,5 +50,8 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 //              Change ModItems.RAW_RUBY if you have multiple recipes resulting in a raw ruby
 //              A normal string should do it?
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.RAW_RUBY)));
-    }
+
+        offerPressurePlateRecipe(exporter, ModBlocks.RUBY_PRESSURE_PLATE, ModItems.RUBY);
+        offerShapelessRecipe(exporter, ModBlocks.RUBY_BUTTON, ModItems.RUBY, "ruby_objects", 1);
+        }
 }

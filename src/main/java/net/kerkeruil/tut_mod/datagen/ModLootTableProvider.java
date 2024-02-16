@@ -31,6 +31,13 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.SOUND_BLOCK);
 
         addDrop(ModBlocks.RUBY_ORE, copperLikeOreDrops(ModBlocks.RUBY_ORE, ModItems.RAW_RUBY));
+
+        addDrop(ModBlocks.RUBY_STAIRS);
+
+//      Because they have to drop two slabs if they're stacked
+        addDrop(ModBlocks.RUBY_SLAB, slabDrops(ModBlocks.RUBY_SLAB));
+        addDrop(ModBlocks.RUBY_BUTTON);
+        addDrop(ModBlocks.RUBY_PRESSURE_PLATE);
     }
 
     public LootTable.Builder copperLikeOreDrops(Block drop, Item item) {

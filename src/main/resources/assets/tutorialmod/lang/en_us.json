@@ -10,8 +10,15 @@
   "block.tutorialmod.ruby_ore": "Ruby Ore",
   "block.tutorialmod.sound_block": "Sound Block",
 
+  "block.tutorialmod.ruby_stairs": "Ruby Stairs",
+  "block.tutorialmod.ruby_slab": "Ruby Slab",
+  "block.tutorialmod.ruby_button": "Ruby Button",
+  "block.tutorialmod.ruby_pressure_plate": "Ruby Pressure Plate",
+
   "itemgroup.tutorialmod.ruby": "Ruby Tutorial Group",
 
   "tooltip.tutorialmod.metal_detector.tooltip": "Finds valuables underground",
-  "tooltip.tutorialmod.sound_block.tooltip": "Makes a little sound on use"
+  "tooltip.tutorialmod.sound_block.tooltip": "Makes a little sound on use",
+
+  "item.tutorialmod.porcupine_spawn_egg": "Porcupine Spawn egg"
 }

@@ -1,0 +1,45 @@
+{
+  "tutorialmod:recipes/misc/ruby_button_from_ruby": {
+    "criteria": {
+      "has_ruby": "2024-02-16 17:30:13 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/crafting_table": {
+    "criteria": {
+      "unlock_right_away": "2024-02-16 17:29:57 +0100"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "minecraft:plains": "2024-02-16 17:30:00 +0100"
+    },
+    "done": false
+  },
+  "tutorialmod:recipes/misc/raw_ruby": {
+    "criteria": {
+      "has_ruby": "2024-02-16 17:30:13 +0100"
+    },
+    "done": true
+  },
+  "tutorialmod:recipes/decorations/ruby_block": {
+    "criteria": {
+      "has_ruby": "2024-02-16 17:30:13 +0100"
+    },
+    "done": true
+  },
+  "tutorialmod:recipes/redstone/ruby_pressure_plate": {
+    "criteria": {
+      "has_ruby": "2024-02-16 17:30:13 +0100"
+    },
+    "done": true
+  },
+  "minecraft:story/root": {
+    "criteria": {
+      "crafting_table": "2024-02-16 17:30:11 +0100"
+    },
+    "done": true
+  },
+  "DataVersion": 3700
+}

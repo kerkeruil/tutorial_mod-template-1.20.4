@@ -10,3 +10,5 @@
 /give @a tutorialmod:coal_briquette
 /gamemode creative
 /gamemode survival
+/gamemode creative
+/gamemode survival
