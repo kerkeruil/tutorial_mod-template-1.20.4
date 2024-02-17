@@ -35,6 +35,7 @@ public class ModItemGroups {
                         entries.add(ModItems.RUBY_CHESTPLATE);
                         entries.add(ModItems.RUBY_LEGGINGS);
                         entries.add(ModItems.RUBY_BOOTS);
+                        entries.add(ModItems.RUBY_HORSE_ARMOR);
 
                         entries.add(ModItems.HAZMAT_SUIT_HELMET);
                         entries.add(ModItems.HAZMAT_SUIT_CHESTPLATE);

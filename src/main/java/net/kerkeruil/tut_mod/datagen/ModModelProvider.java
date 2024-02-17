@@ -59,6 +59,8 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.RUBY_LEGGINGS));
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.RUBY_BOOTS));
 
+        itemModelGenerator.register(ModItems.RUBY_HORSE_ARMOR, Models.GENERATED);
+
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.HAZMAT_SUIT_HELMET));
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.HAZMAT_SUIT_CHESTPLATE));
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.HAZMAT_SUIT_LEGGINGS));

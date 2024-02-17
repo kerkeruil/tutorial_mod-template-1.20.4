@@ -6,6 +6,7 @@ import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.kerkeruil.tut_mod.TutorialMod;
 import net.kerkeruil.tut_mod.entities.ModEntities;
 import net.kerkeruil.tut_mod.item.custom.MetalDetectorItem;
+import net.kerkeruil.tut_mod.item.custom.ModArmorItem;
 import net.kerkeruil.tut_mod.item.custom.ModPoisonSwordItem;
 import net.kerkeruil.tut_mod.item.custom.PaxelItem;
 import net.minecraft.item.*;
@@ -39,20 +40,20 @@ public class ModItems {
     public static final Item RUBY_PAXEL = registerItem("ruby_paxel",
             new PaxelItem(ModToolMaterial.RUBY, 2, 1, new FabricItemSettings()));
 
-//   Armor
-    public static final Item RUBY_HELMET = registerItem("ruby_helmet",  new ArmorItem(ModArmorMaterials.RUBY, ArmorItem.Type.HELMET, new FabricItemSettings()));
+//  Armor
+//  Only change one armoritem a modarmor item, because this kicks off all the checks for statuseffect which can only happen when having a full set anyway
+    public static final Item RUBY_HELMET = registerItem("ruby_helmet",  new ModArmorItem(ModArmorMaterials.RUBY, ArmorItem.Type.HELMET, new FabricItemSettings()));
     public static final Item RUBY_CHESTPLATE = registerItem("ruby_chestplate", new ArmorItem(ModArmorMaterials.RUBY, ArmorItem.Type.CHESTPLATE, new FabricItemSettings()));
     public static final Item RUBY_LEGGINGS = registerItem("ruby_leggings", new ArmorItem(ModArmorMaterials.RUBY, ArmorItem.Type.LEGGINGS, new FabricItemSettings()));
     public static final Item RUBY_BOOTS = registerItem("ruby_boots", new ArmorItem(ModArmorMaterials.RUBY, ArmorItem.Type.BOOTS, new FabricItemSettings()));
 
-    public static final Item HAZMAT_SUIT_HELMET = registerItem("hazmat_suit_helmet",
-            new ArmorItem(ModArmorMaterials.ANTI_RADIATION, ArmorItem.Type.HELMET, new FabricItemSettings()));
-    public static final Item HAZMAT_SUIT_CHESTPLATE = registerItem("hazmat_suit_chestplate",
-            new ArmorItem(ModArmorMaterials.ANTI_RADIATION, ArmorItem.Type.CHESTPLATE, new FabricItemSettings()));
-    public static final Item HAZMAT_SUIT_LEGGINGS = registerItem("hazmat_suit_leggings",
-            new ArmorItem(ModArmorMaterials.ANTI_RADIATION, ArmorItem.Type.LEGGINGS, new FabricItemSettings()));
-    public static final Item HAZMAT_SUIT_BOOTS = registerItem("hazmat_suit_boots",
-            new ArmorItem(ModArmorMaterials.ANTI_RADIATION, ArmorItem.Type.BOOTS, new FabricItemSettings()));
+    public static final Item RUBY_HORSE_ARMOR = registerItem("ruby_horse_armor",
+            new HorseArmorItem(14, "ruby", new FabricItemSettings()));
+
+    public static final Item HAZMAT_SUIT_HELMET = registerItem("hazmat_suit_helmet", new ArmorItem(ModArmorMaterials.ANTI_RADIATION, ArmorItem.Type.HELMET, new FabricItemSettings()));
+    public static final Item HAZMAT_SUIT_CHESTPLATE = registerItem("hazmat_suit_chestplate", new ArmorItem(ModArmorMaterials.ANTI_RADIATION, ArmorItem.Type.CHESTPLATE, new FabricItemSettings()));
+    public static final Item HAZMAT_SUIT_LEGGINGS = registerItem("hazmat_suit_leggings", new ArmorItem(ModArmorMaterials.ANTI_RADIATION, ArmorItem.Type.LEGGINGS, new FabricItemSettings()));
+    public static final Item HAZMAT_SUIT_BOOTS = registerItem("hazmat_suit_boots", new ArmorItem(ModArmorMaterials.ANTI_RADIATION, ArmorItem.Type.BOOTS, new FabricItemSettings()));
 
     public static final Item PORCUPINE_SPAWN_EGG = registerItem("porcupine_spawn_egg",
             new SpawnEggItem(ModEntities.PORCUPINE, 0xa86518, 0x3b260f, new FabricItemSettings()));
