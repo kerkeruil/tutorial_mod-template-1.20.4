@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "tutorialmod:hazmat_suit_helmet",
+    "tutorialmod:hazmat_suit_chestplate",
+    "tutorialmod:hazmat_suit_leggings",
+    "tutorialmod:hazmat_suit_boots"
+  ]
+}

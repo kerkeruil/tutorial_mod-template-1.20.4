@@ -11,6 +11,8 @@ public class ModTags {
     public static class Blocks {
         public static final TagKey<Block> METAL_DETECTOR_DETECTABLE_BLOCKS =
                 createTag("metal_detector_detectable_blocks");
+        public static final TagKey<Block> PAXEL_MINEABLE =
+                createTag("mineable/paxel");
         private static TagKey<Block> createTag(String name) {
             return TagKey.of(RegistryKeys.BLOCK, new Identifier(TutorialMod.mod_ID, name));
         }

@@ -19,29 +19,25 @@ public class ModBlocks {
 //          use .create for a total new block
 //          or just at copyOf(Blocks.IRON_BLOCK).sound() to override for example the sound
             new Block(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).sounds(BlockSoundGroup.AMETHYST_BLOCK)));
+    public static final Block RAW_RUBY_BLOCK = registerBlock("raw_ruby_block", new Block(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).sounds(BlockSoundGroup.AMETHYST_BLOCK)));
+    public static final Block RUBY_ORE = registerBlock("ruby_ore", new Block(FabricBlockSettings.copyOf(Blocks.IRON_ORE).sounds(BlockSoundGroup.AMETHYST_BLOCK)));
+    public static final Block SOUND_BLOCK = registerBlock("sound_block", new SoundBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).sounds(BlockSoundGroup.AMETHYST_BLOCK)));
+    public static final Block RUBY_STAIRS = registerBlock("ruby_stairs", new StairsBlock(ModBlocks.RUBY_BLOCK.getDefaultState(), FabricBlockSettings.copyOf(Blocks.IRON_BLOCK)));
+    public static final Block RUBY_SLAB = registerBlock("ruby_slab", new SlabBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK)));
 
-    public static final Block RAW_RUBY_BLOCK = registerBlock("raw_ruby_block",
-            new Block(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).sounds(BlockSoundGroup.AMETHYST_BLOCK)));
+    //  Ticks is how long it stays pressed. 10 is half a second.
+//  BlockSetType are thinks like, being opened by hand and such.
+    public static final Block RUBY_BUTTON = registerBlock("ruby_button", new ButtonBlock(BlockSetType.IRON, 10, FabricBlockSettings.copyOf(Blocks.STONE_BUTTON)));
+    public static final Block RUBY_PRESSURE_PLATE = registerBlock("ruby_pressure_plate", new PressurePlateBlock(BlockSetType.IRON, FabricBlockSettings.copyOf(Blocks.STONE_PRESSURE_PLATE)));
+    public static final Block RUBY_FENCE = registerBlock("ruby_fence", new FenceBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK)));
+    public static final Block RUBY_FENCE_GATE = registerBlock("ruby_fence_gate", new FenceGateBlock(WoodType.OAK, FabricBlockSettings.copyOf(Blocks.IRON_BLOCK)));
+    public static final Block RUBY_WALL = registerBlock("ruby_wall", new WallBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK)));
+    public static final Block RUBY_DOOR = registerBlock("ruby_door",
+            new DoorBlock(BlockSetType.IRON, FabricBlockSettings.copyOf(Blocks.IRON_DOOR)));
+    public static final Block RUBY_TRAPDOOR = registerBlock("ruby_trapdoor",
+            new TrapdoorBlock(BlockSetType.IRON, FabricBlockSettings.copyOf(Blocks.IRON_TRAPDOOR)));
 
-    public static final Block RUBY_ORE = registerBlock("ruby_ore",
-            new Block(FabricBlockSettings.copyOf(Blocks.IRON_ORE).sounds(BlockSoundGroup.AMETHYST_BLOCK)));
 
-    public static final Block SOUND_BLOCK = registerBlock("sound_block",
-            new SoundBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).sounds(BlockSoundGroup.AMETHYST_BLOCK)));
-
-    public static final Block RUBY_STAIRS = registerBlock("ruby_stairs",
-            new StairsBlock(ModBlocks.RUBY_BLOCK.getDefaultState(), FabricBlockSettings.copyOf(Blocks.IRON_BLOCK)));
-
-    public static final Block RUBY_SLAB = registerBlock("ruby_slab",
-            new SlabBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK)));
-
-    public static final Block RUBY_BUTTON = registerBlock("ruby_button",
-//          Ticks is how long it stays pressed. 10 is half a second.
-//          BlockSetType are thinks like, being opened by hand and such.
-            new ButtonBlock(BlockSetType.IRON, 10, FabricBlockSettings.copyOf(Blocks.STONE_BUTTON)));
-
-    public static final Block RUBY_PRESSURE_PLATE = registerBlock("ruby_pressure_plate",
-            new PressurePlateBlock(BlockSetType.IRON, FabricBlockSettings.copyOf(Blocks.STONE_PRESSURE_PLATE)));
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
