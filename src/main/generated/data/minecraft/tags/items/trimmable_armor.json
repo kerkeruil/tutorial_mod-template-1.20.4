@@ -1,6 +1,10 @@
 {
   "replace": false,
   "values": [
+    "tutorialmod:ruby_helmet",
+    "tutorialmod:ruby_chestplate",
+    "tutorialmod:ruby_leggings",
+    "tutorialmod:ruby_boots",
     "tutorialmod:hazmat_suit_helmet",
     "tutorialmod:hazmat_suit_chestplate",
     "tutorialmod:hazmat_suit_leggings",

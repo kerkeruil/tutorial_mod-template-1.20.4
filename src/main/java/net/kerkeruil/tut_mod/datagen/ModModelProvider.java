@@ -59,6 +59,11 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.RUBY_LEGGINGS));
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.RUBY_BOOTS));
 
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.HAZMAT_SUIT_HELMET));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.HAZMAT_SUIT_CHESTPLATE));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.HAZMAT_SUIT_LEGGINGS));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.HAZMAT_SUIT_BOOTS));
+
         itemModelGenerator.register(ModItems.PORCUPINE_SPAWN_EGG,
                 new Model(Optional.of(new Identifier("item/template_spawn_egg")), Optional.empty()));
     }

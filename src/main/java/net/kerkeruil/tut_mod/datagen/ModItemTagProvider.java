@@ -16,9 +16,16 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
     @Override
     protected void configure(RegistryWrapper.WrapperLookup arg) {
         getOrCreateTagBuilder(ItemTags.TRIMMABLE_ARMOR)
+//              Ruby armor
                 .add(ModItems.RUBY_HELMET,
-                        ModItems.RUBY_CHESTPLATE,
-                        ModItems.RUBY_LEGGINGS,
-                        ModItems.RUBY_BOOTS);
+                ModItems.RUBY_CHESTPLATE,
+                ModItems.RUBY_LEGGINGS,
+                ModItems.RUBY_BOOTS,
+
+//              Hazmat armor
+                ModItems.HAZMAT_SUIT_HELMET,
+                ModItems.HAZMAT_SUIT_CHESTPLATE,
+                ModItems.HAZMAT_SUIT_LEGGINGS,
+                ModItems.HAZMAT_SUIT_BOOTS);
     }
 }

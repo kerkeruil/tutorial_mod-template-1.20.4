@@ -19,6 +19,11 @@
   "item.tutorialmod.ruby_leggings": "Ruby Leggings",
   "item.tutorialmod.ruby_boots": "Ruby Boots",
 
+  "item.tutorialmod.hazmat_suit_helmet": "Hazmat Suit Helmet",
+  "item.tutorialmod.hazmat_suit_chestplate": "Hazmat Suit Chestplate",
+  "item.tutorialmod.hazmat_suit_leggings": "Hazmat Suit Leggings",
+  "item.tutorialmod.hazmat_suit_boots": "Hazmat Suit Boots",
+
 
   "block.tutorialmod.ruby_block": "Block of Ruby",
   "block.tutorialmod.raw_ruby_block": "Block of Raw Ruby",
