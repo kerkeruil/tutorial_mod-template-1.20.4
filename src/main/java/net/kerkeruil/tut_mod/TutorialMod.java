@@ -7,9 +7,12 @@ import net.kerkeruil.tut_mod.block.ModBlocks;
 import net.kerkeruil.tut_mod.enchantment.ModEnchantments;
 import net.kerkeruil.tut_mod.item.ModItemGroups;
 import net.kerkeruil.tut_mod.item.ModItems;
+import net.kerkeruil.tut_mod.sounds.ModSounds;
 import net.kerkeruil.tut_mod.util.ModRegistries;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import static net.kerkeruil.tut_mod.sounds.ModSounds.registerSounds;
 
 public class TutorialMod implements ModInitializer {
 	// This logger is used to write text to the console and the log file.
@@ -30,5 +33,7 @@ public class TutorialMod implements ModInitializer {
 
 		ModRegistries.registerModStuffs();
 		ModEnchantments.registerModEnchantments();
+		ModSounds.registerSounds();;
+
 	}
 }

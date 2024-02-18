@@ -18,3 +18,9 @@
 /gamemode survival
 /gamemode creative
 /gamemode survival
+/set home
+/home set
+/return
+/home return
+/kill @a
+/home return

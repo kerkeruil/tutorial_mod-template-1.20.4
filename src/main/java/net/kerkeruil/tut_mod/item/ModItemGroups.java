@@ -32,6 +32,8 @@ public class ModItemGroups {
                         entries.add(ModItems.CAULIFLOWER_SEEDS);
                         entries.add(ModItems.CAULIFLOWER);
 
+                        entries.add(ModBlocks.PETUNIA);
+
 //                      Tools
                         entries.add(ModItems.RUBY_SWORD);
                         entries.add(ModItems.RUBY_AXE);

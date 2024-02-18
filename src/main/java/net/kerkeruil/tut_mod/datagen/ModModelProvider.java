@@ -39,6 +39,7 @@ public class ModModelProvider extends FabricModelProvider {
         registerCustomLamp(blockStateModelGenerator);
 
         blockStateModelGenerator.registerCrop(ModBlocks.CAULIFLOWER_CROP, CauliflowerCropBlock.AGE, 0, 1, 2, 3, 4, 5, 6);
+        blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.PETUNIA, ModBlocks.POTTED_PETUNIA, BlockStateModelGenerator.TintType.NOT_TINTED);
     }
 
 

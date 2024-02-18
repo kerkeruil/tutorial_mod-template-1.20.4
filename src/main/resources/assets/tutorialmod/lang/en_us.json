@@ -42,8 +42,9 @@
   "block.tutorialmod.ruby_wall": "Ruby Wall",
   "block.tutorialmod.ruby_door": "Ruby Door",
   "block.tutorialmod.ruby_trapdoor": "Ruby Trapdoor",
-
   "block.tutorialmod.ruby_lamp_block": "Ruby Lamp",
+  "block.tutorialmod.petunia": "Petunia",
+
 
   "itemgroup.ruby": "Ruby Tutorial Group",
 
@@ -52,5 +53,7 @@
 
   "enchantment.tutorialmod.lightning_striker": "Lightning Striker",
 
-  "item.tutorialmod.porcupine_spawn_egg": "Porcupine Spawn egg"
+  "item.tutorialmod.porcupine_spawn_egg": "Porcupine Spawn egg",
+
+  "sounds.tutorialmod.metal_detector_found_ore": "Metal detector found an ore"
 }
