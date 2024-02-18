@@ -3,8 +3,10 @@ package net.kerkeruil.tut_mod.block;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.kerkeruil.tut_mod.TutorialMod;
+import net.kerkeruil.tut_mod.block.custom.RubyLampBlock;
 import net.kerkeruil.tut_mod.block.custom.SoundBlock;
 import net.minecraft.block.*;
+import net.minecraft.block.enums.Instrument;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
@@ -36,6 +38,14 @@ public class ModBlocks {
             new DoorBlock(BlockSetType.IRON, FabricBlockSettings.copyOf(Blocks.IRON_DOOR)));
     public static final Block RUBY_TRAPDOOR = registerBlock("ruby_trapdoor",
             new TrapdoorBlock(BlockSetType.IRON, FabricBlockSettings.copyOf(Blocks.IRON_TRAPDOOR)));
+
+    public static final Block RUBY_LAMP_BLOCK = registerBlock("ruby_lamp_block",
+            new RubyLampBlock( FabricBlockSettings.create()
+                    .mapColor(MapColor.PINK)
+                    .instrument(Instrument.BASEDRUM)
+                    .strength(4f)
+                    .requiresTool()
+                    .luminance(state -> state.get(RubyLampBlock.CLICKED) ? 15 : 0)));
 
 
 

@@ -4,6 +4,7 @@ import net.fabricmc.api.ModInitializer;
 
 import net.fabricmc.fabric.api.registry.FuelRegistry;
 import net.kerkeruil.tut_mod.block.ModBlocks;
+import net.kerkeruil.tut_mod.enchantment.ModEnchantments;
 import net.kerkeruil.tut_mod.item.ModItemGroups;
 import net.kerkeruil.tut_mod.item.ModItems;
 import net.kerkeruil.tut_mod.util.ModRegistries;
@@ -25,6 +26,7 @@ public class TutorialMod implements ModInitializer {
 		ModItemGroups.registerItemGroups();
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
+		ModEnchantments.registerModEnchantments();
 
 		ModRegistries.registerModStuffs();
 

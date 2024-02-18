@@ -3,11 +3,9 @@ package net.kerkeruil.tut_mod.datagen;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.kerkeruil.tut_mod.block.ModBlocks;
+import net.kerkeruil.tut_mod.block.custom.RubyLampBlock;
 import net.kerkeruil.tut_mod.item.ModItems;
-import net.minecraft.data.client.BlockStateModelGenerator;
-import net.minecraft.data.client.ItemModelGenerator;
-import net.minecraft.data.client.Model;
-import net.minecraft.data.client.Models;
+import net.minecraft.data.client.*;
 import net.minecraft.item.ArmorItem;
 import net.minecraft.util.Identifier;
 
@@ -36,8 +34,19 @@ public class ModModelProvider extends FabricModelProvider {
 //      Door texture is different for blocks and items so need to be added to both folders
         blockStateModelGenerator.registerDoor(ModBlocks.RUBY_DOOR);
         blockStateModelGenerator.registerTrapdoor(ModBlocks.RUBY_TRAPDOOR);
+
+        registerCustomLamp(blockStateModelGenerator);
     }
 
+
+    // Use BlockStateModelGenerator for custom block generation. Add "BlockStateModelGenerator blockStateModelGenerator" as
+    // input arguments for the function.
+    private void registerCustomLamp(BlockStateModelGenerator blockStateModelGenerator) {
+        Identifier identifier = TexturedModel.CUBE_ALL.upload(ModBlocks.RUBY_LAMP_BLOCK, blockStateModelGenerator.modelCollector);
+        Identifier identifier2 = blockStateModelGenerator.createSubModel(ModBlocks.RUBY_LAMP_BLOCK, "_on", Models.CUBE_ALL, TextureMap::all);
+        blockStateModelGenerator.blockStateCollector.accept(VariantsBlockStateSupplier.create(ModBlocks.RUBY_LAMP_BLOCK)
+                .coordinate(BlockStateModelGenerator.createBooleanModelMap(RubyLampBlock.CLICKED, identifier2, identifier)));
+    }
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
         itemModelGenerator.register(ModItems.RUBY, Models.GENERATED);
@@ -69,4 +78,5 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.PORCUPINE_SPAWN_EGG,
                 new Model(Optional.of(new Identifier("item/template_spawn_egg")), Optional.empty()));
     }
+
 }

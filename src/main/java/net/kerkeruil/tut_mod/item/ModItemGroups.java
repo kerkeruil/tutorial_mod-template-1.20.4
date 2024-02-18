@@ -3,10 +3,16 @@ package net.kerkeruil.tut_mod.item;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.kerkeruil.tut_mod.TutorialMod;
 import net.kerkeruil.tut_mod.block.ModBlocks;
+import net.kerkeruil.tut_mod.block.custom.RubyLampBlock;
+import net.minecraft.block.Blocks;
+import net.minecraft.block.enums.WireConnection;
+import net.minecraft.data.client.*;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
+import net.minecraft.item.Items;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
+import net.minecraft.state.property.Properties;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 
@@ -42,11 +48,14 @@ public class ModItemGroups {
                         entries.add(ModItems.HAZMAT_SUIT_LEGGINGS);
                         entries.add(ModItems.HAZMAT_SUIT_BOOTS);
 
+
 //                      Blocks
                         entries.add(ModBlocks.RUBY_BLOCK);
                         entries.add(ModBlocks.RAW_RUBY_BLOCK);
                         entries.add(ModBlocks.RUBY_ORE);
                         entries.add(ModBlocks.SOUND_BLOCK);
+
+                        entries.add(ModBlocks.RUBY_LAMP_BLOCK);
 
 //                      Non-blocks
                         entries.add(ModBlocks.RUBY_STAIRS);
@@ -62,7 +71,6 @@ public class ModItemGroups {
 //                      Spawn Egg
                         entries.add(ModItems.PORCUPINE_SPAWN_EGG);
                     }).build());
-
 
     public static void registerItemGroups() {
         TutorialMod.LOGGER.info("Registering Item Groups for " + TutorialMod.mod_ID);

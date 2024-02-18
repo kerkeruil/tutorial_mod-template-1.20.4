@@ -41,10 +41,13 @@
   "block.tutorialmod.ruby_door": "Ruby Door",
   "block.tutorialmod.ruby_trapdoor": "Ruby Trapdoor",
 
-  "itemgroup.tutorialmod.ruby": "Ruby Tutorial Group",
+  "block.tutorialmod.ruby_lamp_block": "Ruby Lamp",
+
+  "itemgroup.ruby": "Ruby Tutorial Group",
 
   "tooltip.tutorialmod.metal_detector.tooltip": "Finds valuables underground",
   "tooltip.tutorialmod.sound_block.tooltip": "Makes a little sound on use",
 
+  "enchantment.tutorialmod.lightning_striker": "Lightning Striker",
   "item.tutorialmod.porcupine_spawn_egg": "Porcupine Spawn egg"
 }

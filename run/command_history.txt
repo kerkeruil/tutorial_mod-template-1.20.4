@@ -16,3 +16,4 @@
 /gamemode survival
 /give @a minecraft:apple 64
 /gamemode survival
+/gamemode creative
