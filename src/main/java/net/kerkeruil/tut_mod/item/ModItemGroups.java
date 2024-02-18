@@ -32,6 +32,8 @@ public class ModItemGroups {
                         entries.add(ModItems.CAULIFLOWER_SEEDS);
                         entries.add(ModItems.CAULIFLOWER);
 
+                        entries.add(ModItems.BAR_BRAWL_MUSIC_DISC);
+
                         entries.add(ModBlocks.PETUNIA);
 
 //                      Tools

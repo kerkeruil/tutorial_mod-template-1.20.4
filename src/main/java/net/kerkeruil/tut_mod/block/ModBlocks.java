@@ -6,6 +6,7 @@ import net.kerkeruil.tut_mod.TutorialMod;
 import net.kerkeruil.tut_mod.block.custom.CauliflowerCropBlock;
 import net.kerkeruil.tut_mod.block.custom.RubyLampBlock;
 import net.kerkeruil.tut_mod.block.custom.SoundBlock;
+import net.kerkeruil.tut_mod.sounds.ModSounds;
 import net.minecraft.block.*;
 import net.minecraft.block.enums.Instrument;
 import net.minecraft.entity.effect.StatusEffect;
@@ -48,7 +49,8 @@ public class ModBlocks {
                     .instrument(Instrument.BASEDRUM)
                     .strength(4f)
                     .requiresTool()
-                    .luminance(state -> state.get(RubyLampBlock.CLICKED) ? 15 : 0)));
+                    .luminance(state -> state.get(RubyLampBlock.CLICKED) ? 15 : 0)
+                    .sounds(ModSounds.PINK_GARNET_LAMP_SOUNDS)));
 
     public static final Block CAULIFLOWER_CROP = registerBlockWithoutBlockItem("cauliflower_crop",
             new CauliflowerCropBlock(FabricBlockSettings.copyOf(Blocks.WHEAT)));

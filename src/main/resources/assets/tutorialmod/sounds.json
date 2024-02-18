@@ -4,5 +4,43 @@
     "sounds": [
       "tutorialmod:metal_detector_found_ore"
     ]
+  },
+  "pink_garnet_lamp_break": {
+    "subtitle": "tutorialmod.pink_garnet_lamp_break",
+    "sounds": [
+      "tutorialmod:pink_garnet_lamp_break"
+    ]
+  },
+  "pink_garnet_lamp_step": {
+    "subtitle": "tutorialmod.pink_garnet_lamp_step",
+    "sounds": [
+      "tutorialmod:pink_garnet_lamp_step"
+    ]
+  },
+  "pink_garnet_lamp_place": {
+    "subtitle": "tutorialmod.pink_garnet_lamp_place",
+    "sounds": [
+      "tutorialmod:pink_garnet_lamp_place"
+    ]
+  },
+  "pink_garnet_lamp_hit": {
+    "subtitle": "tutorialmod.pink_garnet_lamp_hit",
+    "sounds": [
+      "tutorialmod:pink_garnet_lamp_hit"
+    ]
+  },
+  "pink_garnet_lamp_fall": {
+    "subtitle": "tutorialmod.pink_garnet_lamp_fall",
+    "sounds": [
+      "tutorialmod:pink_garnet_lamp_fall"
+    ]
+  },
+  "bar_brawl": {
+    "sounds": [
+      {
+        "name": "tutorialmod:bar_brawl",
+        "stream": true
+      }
+    ]
   }
 }

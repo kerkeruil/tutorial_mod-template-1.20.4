@@ -7,6 +7,7 @@ import net.kerkeruil.tut_mod.TutorialMod;
 import net.kerkeruil.tut_mod.block.ModBlocks;
 import net.kerkeruil.tut_mod.entities.ModEntities;
 import net.kerkeruil.tut_mod.item.custom.*;
+import net.kerkeruil.tut_mod.sounds.ModSounds;
 import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
@@ -63,6 +64,9 @@ public class ModItems {
 //   Other
     public static final Item DATA_TABLET = registerItem("data_tablet",
         new DataTabletItem(new FabricItemSettings().maxCount(1)));
+    public static final Item BAR_BRAWL_MUSIC_DISC = registerItem("bar_brawl_music_disc",
+            new MusicDiscItem(9, ModSounds.BAR_BRAWL, new FabricItemSettings().maxCount(1), 122));
+
 
     private static void addItemsToIngredientItemGroup(FabricItemGroupEntries entries) {
         entries.add(RUBY);

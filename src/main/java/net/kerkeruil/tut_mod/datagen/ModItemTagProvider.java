@@ -3,6 +3,7 @@ package net.kerkeruil.tut_mod.datagen;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.kerkeruil.tut_mod.item.ModItems;
+import net.kerkeruil.tut_mod.sounds.ModSounds;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.registry.tag.ItemTags;
 
@@ -27,5 +28,8 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 ModItems.HAZMAT_SUIT_CHESTPLATE,
                 ModItems.HAZMAT_SUIT_LEGGINGS,
                 ModItems.HAZMAT_SUIT_BOOTS);
+
+    getOrCreateTagBuilder(ItemTags.MUSIC_DISCS)
+            .add(ModItems.BAR_BRAWL_MUSIC_DISC);
     }
 }
