@@ -27,6 +27,10 @@ public class ModItemGroups {
                         entries.add(ModItems.METAL_DETECTOR);
                         entries.add(ModItems.TOMATO);
                         entries.add(ModItems.COAL_BRIQUETTE);
+                        entries.add(ModItems.DATA_TABLET);
+
+                        entries.add(ModItems.CAULIFLOWER_SEEDS);
+                        entries.add(ModItems.CAULIFLOWER);
 
 //                      Tools
                         entries.add(ModItems.RUBY_SWORD);

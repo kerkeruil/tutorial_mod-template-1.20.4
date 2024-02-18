@@ -4,7 +4,9 @@
   "item.tutorialmod.metal_detector": "Metal Detector",
   "item.tutorialmod.tomato": "Tomato",
   "item.tutorialmod.coal_briquette": "Coal Briquette",
-
+  "item.tutorialmod.data_tablet": "Data Tablet",
+  "item.tutorialmod.cauliflower_seeds": "Cauliflower Seeds",
+  "item.tutorialmod.cauliflower": "Cauliflower",
 
   "item.tutorialmod.ruby_sword": "Ruby Sword",
   "item.tutorialmod.ruby_axe": "Ruby Axe",
@@ -49,5 +51,6 @@
   "tooltip.tutorialmod.sound_block.tooltip": "Makes a little sound on use",
 
   "enchantment.tutorialmod.lightning_striker": "Lightning Striker",
+
   "item.tutorialmod.porcupine_spawn_egg": "Porcupine Spawn egg"
 }

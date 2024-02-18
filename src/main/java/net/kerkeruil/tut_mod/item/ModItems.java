@@ -4,11 +4,9 @@ import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.kerkeruil.tut_mod.TutorialMod;
+import net.kerkeruil.tut_mod.block.ModBlocks;
 import net.kerkeruil.tut_mod.entities.ModEntities;
-import net.kerkeruil.tut_mod.item.custom.MetalDetectorItem;
-import net.kerkeruil.tut_mod.item.custom.ModArmorItem;
-import net.kerkeruil.tut_mod.item.custom.ModPoisonSwordItem;
-import net.kerkeruil.tut_mod.item.custom.PaxelItem;
+import net.kerkeruil.tut_mod.item.custom.*;
 import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
@@ -22,6 +20,9 @@ public class ModItems {
 
 //  Food
     public static final Item TOMATO = registerItem("tomato", new Item(new FabricItemSettings().food(ModFoodComponents.TOMATO)));
+
+    public static final Item CAULIFLOWER = registerItem("cauliflower", new Item(new FabricItemSettings().food(ModFoodComponents.CAULIFLOWER)));
+    public static final Item CAULIFLOWER_SEEDS = registerItem("cauliflower_seeds", new AliasedBlockItem(ModBlocks.CAULIFLOWER_CROP, new FabricItemSettings()));
 
 //  Fuel
     public static final Item COAL_BRIQUETTE = registerItem("coal_briquette", new Item(new FabricItemSettings()));
@@ -57,6 +58,10 @@ public class ModItems {
 
     public static final Item PORCUPINE_SPAWN_EGG = registerItem("porcupine_spawn_egg",
             new SpawnEggItem(ModEntities.PORCUPINE, 0xa86518, 0x3b260f, new FabricItemSettings()));
+
+//   Other
+    public static final Item DATA_TABLET = registerItem("data_tablet",
+        new DataTabletItem(new FabricItemSettings().maxCount(1)));
 
     private static void addItemsToIngredientItemGroup(FabricItemGroupEntries entries) {
         entries.add(RUBY);

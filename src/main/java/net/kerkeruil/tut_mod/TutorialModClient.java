@@ -9,6 +9,7 @@ import net.kerkeruil.tut_mod.entities.ModEntities;
 import net.kerkeruil.tut_mod.entities.client.PorcupineModel;
 import net.kerkeruil.tut_mod.entities.client.PorcupineRenderer;
 import net.kerkeruil.tut_mod.entities.layer.ModModelLayers;
+import net.kerkeruil.tut_mod.util.ModModelPredicateProvider;
 import net.minecraft.client.render.RenderLayer;
 
 public class TutorialModClient implements ClientModInitializer {
@@ -16,6 +17,10 @@ public class TutorialModClient implements ClientModInitializer {
     public void onInitializeClient() {
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.RUBY_DOOR, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.RUBY_TRAPDOOR, RenderLayer.getCutout());
+
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.CAULIFLOWER_CROP, RenderLayer.getCutout());
+
+        ModModelPredicateProvider.registerModModels();
 
         EntityModelLayerRegistry.registerModelLayer(ModModelLayers.PORCUPINE, PorcupineModel::getTexturedModelData);
         EntityRendererRegistry.register(ModEntities.PORCUPINE, PorcupineRenderer::new);

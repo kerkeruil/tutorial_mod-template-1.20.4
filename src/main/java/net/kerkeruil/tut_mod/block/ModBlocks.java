@@ -3,6 +3,7 @@ package net.kerkeruil.tut_mod.block;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.kerkeruil.tut_mod.TutorialMod;
+import net.kerkeruil.tut_mod.block.custom.CauliflowerCropBlock;
 import net.kerkeruil.tut_mod.block.custom.RubyLampBlock;
 import net.kerkeruil.tut_mod.block.custom.SoundBlock;
 import net.minecraft.block.*;
@@ -47,10 +48,17 @@ public class ModBlocks {
                     .requiresTool()
                     .luminance(state -> state.get(RubyLampBlock.CLICKED) ? 15 : 0)));
 
+    public static final Block CAULIFLOWER_CROP = registerBlockWithoutBlockItem("cauliflower_crop",
+            new CauliflowerCropBlock(FabricBlockSettings.copyOf(Blocks.WHEAT)));
+
 
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
+        return Registry.register(Registries.BLOCK, new Identifier(TutorialMod.mod_ID, name), block);
+    }
+
+    private static Block registerBlockWithoutBlockItem(String name, Block block) {
         return Registry.register(Registries.BLOCK, new Identifier(TutorialMod.mod_ID, name), block);
     }
     private static Item registerBlockItem(String name, Block block) {
