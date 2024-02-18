@@ -1,0 +1,33 @@
+{
+  "tutorialmod:recipes/misc/ruby_from_smelting_raw_ruby": {
+    "criteria": {
+      "has_raw_ruby": "2024-02-18 17:09:17 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/smoker": {
+    "criteria": {
+      "has_furnace": "2024-02-18 17:08:54 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/crafting_table": {
+    "criteria": {
+      "unlock_right_away": "2024-02-18 17:08:08 +0100"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "minecraft:plains": "2024-02-18 17:08:11 +0100"
+    },
+    "done": false
+  },
+  "tutorialmod:recipes/misc/ruby_from_blasting_raw_ruby": {
+    "criteria": {
+      "has_raw_ruby": "2024-02-18 17:09:17 +0100"
+    },
+    "done": true
+  },
+  "DataVersion": 3700
+}

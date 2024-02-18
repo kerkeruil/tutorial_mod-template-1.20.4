@@ -24,12 +24,11 @@ public class TutorialMod implements ModInitializer {
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
 		ModItemGroups.registerItemGroups();
+
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
-		ModEnchantments.registerModEnchantments();
 
 		ModRegistries.registerModStuffs();
-
-		FuelRegistry.INSTANCE.add(ModItems.COAL_BRIQUETTE, 200);
+		ModEnchantments.registerModEnchantments();
 	}
 }
