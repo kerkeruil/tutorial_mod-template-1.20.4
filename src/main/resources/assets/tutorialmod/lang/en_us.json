@@ -58,5 +58,7 @@
   "sounds.tutorialmod.metal_detector_found_ore": "Metal detector found an ore",
 
   "item.tutorialmod.bar_brawl_music_disc": "Bar Brawl Music Disc",
-  "item.tutorialmod.bar_brawl_music_disc.desc": "Bryan Tech - Bar Brawl (CC0)"
+  "item.tutorialmod.bar_brawl_music_disc.desc": "Bryan Tech - Bar Brawl (CC0)",
+
+  "block.tutorialmod.gem_empowering_station": "Gem Empowering Station"
 }

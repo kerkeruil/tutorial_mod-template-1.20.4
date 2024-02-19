@@ -4,6 +4,7 @@ import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.kerkeruil.tut_mod.TutorialMod;
 import net.kerkeruil.tut_mod.block.custom.CauliflowerCropBlock;
+import net.kerkeruil.tut_mod.block.custom.GemEmpoweringStationBlock;
 import net.kerkeruil.tut_mod.block.custom.RubyLampBlock;
 import net.kerkeruil.tut_mod.block.custom.SoundBlock;
 import net.kerkeruil.tut_mod.sounds.ModSounds;
@@ -55,13 +56,13 @@ public class ModBlocks {
     public static final Block CAULIFLOWER_CROP = registerBlockWithoutBlockItem("cauliflower_crop",
             new CauliflowerCropBlock(FabricBlockSettings.copyOf(Blocks.WHEAT)));
 
-    //  Fuel
     public static final Block PETUNIA = registerBlock("petunia",
             new FlowerBlock(StatusEffects.BAD_OMEN, 4, FabricBlockSettings.copyOf(Blocks.ALLIUM)));
     public static final Block POTTED_PETUNIA = registerBlockWithoutBlockItem("potted_petunia",
             new FlowerPotBlock(PETUNIA, FabricBlockSettings.copyOf(Blocks.ALLIUM)));
 
-
+    public static final Block GEM_EMPOWERING_STATION = registerBlock("gem_empowering_station",
+            new GemEmpoweringStationBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).nonOpaque()));
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
