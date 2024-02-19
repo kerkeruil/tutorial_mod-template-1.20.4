@@ -3,10 +3,7 @@ package net.kerkeruil.tut_mod.block;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.kerkeruil.tut_mod.TutorialMod;
-import net.kerkeruil.tut_mod.block.custom.CauliflowerCropBlock;
-import net.kerkeruil.tut_mod.block.custom.GemEmpoweringStationBlock;
-import net.kerkeruil.tut_mod.block.custom.RubyLampBlock;
-import net.kerkeruil.tut_mod.block.custom.SoundBlock;
+import net.kerkeruil.tut_mod.block.custom.*;
 import net.kerkeruil.tut_mod.sounds.ModSounds;
 import net.minecraft.block.*;
 import net.minecraft.block.enums.Instrument;
@@ -63,6 +60,15 @@ public class ModBlocks {
 
     public static final Block GEM_EMPOWERING_STATION = registerBlock("gem_empowering_station",
             new GemEmpoweringStationBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).nonOpaque()));
+
+
+//  Custom
+    public static final Block NUCLEAR_BARREL_BLOCK = registerBlock("nuclear_barrel_block",
+            (Block)new HayBlock(AbstractBlock.Settings.create().mapColor(MapColor.YELLOW).instrument(Instrument.BANJO).strength(0.5f).sounds(BlockSoundGroup.GRASS)));
+
+    public static final Block BARBED_WIRE_BLOCK = registerBlock("barbed_wire_block",
+            new BarbedWireBlock(FabricBlockSettings.copyOf(Blocks.MAGMA_BLOCK).nonOpaque()));
+
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);

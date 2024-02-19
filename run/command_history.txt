@@ -24,3 +24,4 @@
 /home return
 /kill @a
 /home return
+/gamemode survival

@@ -6,6 +6,7 @@ import net.kerkeruil.tut_mod.block.ModBlocks;
 import net.kerkeruil.tut_mod.block.custom.CauliflowerCropBlock;
 import net.kerkeruil.tut_mod.block.custom.RubyLampBlock;
 import net.kerkeruil.tut_mod.item.ModItems;
+import net.minecraft.block.Blocks;
 import net.minecraft.data.client.*;
 import net.minecraft.item.ArmorItem;
 import net.minecraft.util.Identifier;
@@ -43,11 +44,16 @@ public class ModModelProvider extends FabricModelProvider {
 
         blockStateModelGenerator.registerNorthDefaultHorizontalRotation(ModBlocks.GEM_EMPOWERING_STATION);
 
+//      Custom
+        blockStateModelGenerator.registerAxisRotated(ModBlocks.NUCLEAR_BARREL_BLOCK, TexturedModel.END_FOR_TOP_CUBE_COLUMN, TexturedModel.END_FOR_TOP_CUBE_COLUMN_HORIZONTAL);
+        blockStateModelGenerator.registerNorthDefaultHorizontalRotation(ModBlocks.BARBED_WIRE_BLOCK);
+
     }
 
 
     // Use BlockStateModelGenerator for custom block generation. Add "BlockStateModelGenerator blockStateModelGenerator" as
     // input arguments for the function.
+//    BlockStateModelGenerator
     private void registerCustomLamp(BlockStateModelGenerator blockStateModelGenerator) {
         Identifier identifier = TexturedModel.CUBE_ALL.upload(ModBlocks.RUBY_LAMP_BLOCK, blockStateModelGenerator.modelCollector);
         Identifier identifier2 = blockStateModelGenerator.createSubModel(ModBlocks.RUBY_LAMP_BLOCK, "_on", Models.CUBE_ALL, TextureMap::all);

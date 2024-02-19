@@ -52,9 +52,15 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.RUBY_DOOR, doorDrops(ModBlocks.RUBY_DOOR));
         addDrop(ModBlocks.RUBY_TRAPDOOR);
 
+        addDrop(ModBlocks.GEM_EMPOWERING_STATION);
         BlockStatePropertyLootCondition.Builder builder2 = BlockStatePropertyLootCondition.builder(ModBlocks.CAULIFLOWER_CROP).properties(StatePredicate.Builder.create().exactMatch(CauliflowerCropBlock.AGE, 6));
         this.addDrop(ModBlocks.CAULIFLOWER_CROP, this.cropDrops(ModBlocks.CAULIFLOWER_CROP, ModItems.CAULIFLOWER, ModItems.CAULIFLOWER_SEEDS, builder2));
-    }
+
+
+//      Custom
+        addDrop(ModBlocks.NUCLEAR_BARREL_BLOCK);
+        addDrop(ModBlocks.BARBED_WIRE_BLOCK);
+       }
 
     public LootTable.Builder copperLikeOreDrops(Block drop, Item item) {
         return BlockLootTableGenerator.dropsWithSilkTouch(drop,

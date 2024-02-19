@@ -75,9 +75,12 @@ public class ModItemGroups {
                         entries.add(ModBlocks.RUBY_WALL);
                         entries.add(ModBlocks.RUBY_DOOR);
                         entries.add(ModBlocks.RUBY_TRAPDOOR);
+                        entries.add(ModBlocks.GEM_EMPOWERING_STATION);
+
 
 //                      Custom blocks
-                        entries.add(ModBlocks.GEM_EMPOWERING_STATION);
+                        entries.add(ModBlocks.NUCLEAR_BARREL_BLOCK);
+                        entries.add(ModBlocks.BARBED_WIRE_BLOCK);
 
 //                      Spawn Egg
                         entries.add(ModItems.PORCUPINE_SPAWN_EGG);
