@@ -16,6 +16,9 @@
 
   "item.tutorialmod.ruby_paxel": "Ruby Paxel",
 
+  "item.tutorialmod.radiation_staff": "Radiation Staff",
+  "item.tutorialmod.ruby_bow": "Ruby Bow",
+
   "item.tutorialmod.ruby_helmet": "Ruby Helmet",
   "item.tutorialmod.ruby_chestplate": "Ruby Chestplate",
   "item.tutorialmod.ruby_leggings": "Ruby Leggings",
@@ -60,5 +63,7 @@
   "item.tutorialmod.bar_brawl_music_disc": "Bar Brawl Music Disc",
   "item.tutorialmod.bar_brawl_music_disc.desc": "Bryan Tech - Bar Brawl (CC0)",
 
-  "block.tutorialmod.gem_empowering_station": "Gem Empowering Station"
+  "block.tutorialmod.gem_empowering_station": "Gem Empowering Station",
+  "block.tutorialmod.nuclear_barrel_block": "Nuclear Barrel",
+  "block.tutorialmod.barbed_wire_block": "Barbed Wire"
 }

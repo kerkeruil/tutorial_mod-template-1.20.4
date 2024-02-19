@@ -25,3 +25,4 @@
 /kill @a
 /home return
 /gamemode survival
+/gamemode creative
