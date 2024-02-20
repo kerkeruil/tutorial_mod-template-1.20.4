@@ -5,6 +5,7 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.kerkeruil.tut_mod.block.ModBlocks;
 import net.kerkeruil.tut_mod.block.custom.CauliflowerCropBlock;
 import net.kerkeruil.tut_mod.block.custom.RubyLampBlock;
+import net.kerkeruil.tut_mod.fluid.ModFluids;
 import net.kerkeruil.tut_mod.item.ModItems;
 import net.minecraft.block.Blocks;
 import net.minecraft.data.client.*;
@@ -69,6 +70,8 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.CAULIFLOWER, Models.GENERATED);
         itemModelGenerator.register(ModItems.METAL_DETECTOR, Models.GENERATED);
         itemModelGenerator.register(ModItems.BAR_BRAWL_MUSIC_DISC, Models.GENERATED);
+        itemModelGenerator.register(ModFluids.SOAP_WATER_BUCKET, Models.GENERATED);
+
 //        itemModelGenerator.register(ModItems.DATA_TABLET, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.RUBY_SWORD, Models.HANDHELD);
@@ -90,6 +93,7 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.HAZMAT_SUIT_CHESTPLATE));
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.HAZMAT_SUIT_LEGGINGS));
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.HAZMAT_SUIT_BOOTS));
+
 
         itemModelGenerator.register(ModItems.PORCUPINE_SPAWN_EGG,
                 new Model(Optional.of(new Identifier("item/template_spawn_egg")), Optional.empty()));

@@ -4,6 +4,7 @@ import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.kerkeruil.tut_mod.TutorialMod;
 import net.kerkeruil.tut_mod.block.ModBlocks;
 import net.kerkeruil.tut_mod.block.custom.RubyLampBlock;
+import net.kerkeruil.tut_mod.fluid.ModFluids;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.enums.WireConnection;
 import net.minecraft.data.client.*;
@@ -35,6 +36,7 @@ public class ModItemGroups {
                         entries.add(ModItems.BAR_BRAWL_MUSIC_DISC);
 
                         entries.add(ModBlocks.PETUNIA);
+                        entries.add(ModFluids.SOAP_WATER_BUCKET);
 
 //                      Tools
                         entries.add(ModItems.RUBY_SWORD);

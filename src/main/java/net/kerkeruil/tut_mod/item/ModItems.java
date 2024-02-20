@@ -61,7 +61,7 @@ public class ModItems {
     public static final Item PORCUPINE_SPAWN_EGG = registerItem("porcupine_spawn_egg",
             new SpawnEggItem(ModEntities.PORCUPINE, 0xa86518, 0x3b260f, new FabricItemSettings()));
 
-//   Other
+    //   Other
     public static final Item DATA_TABLET = registerItem("data_tablet",
         new DataTabletItem(new FabricItemSettings().maxCount(1)));
     public static final Item BAR_BRAWL_MUSIC_DISC = registerItem("bar_brawl_music_disc",

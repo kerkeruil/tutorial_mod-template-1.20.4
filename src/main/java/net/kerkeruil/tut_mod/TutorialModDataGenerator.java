@@ -17,5 +17,6 @@ public class TutorialModDataGenerator implements DataGeneratorEntrypoint {
 		pack.addProvider(ModPaintingVariantTagProvider::new);
 		pack.addProvider(ModAdvancementProvider::new);
 		pack.addProvider(ModPOITagProvider::new);
+		pack.addProvider(ModFluidTagProvider::new);
 	}
 }

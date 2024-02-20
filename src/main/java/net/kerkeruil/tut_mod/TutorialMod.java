@@ -7,6 +7,7 @@ import net.kerkeruil.tut_mod.Potion.ModPotions;
 import net.kerkeruil.tut_mod.block.ModBlocks;
 import net.kerkeruil.tut_mod.effect.ModEffects;
 import net.kerkeruil.tut_mod.enchantment.ModEnchantments;
+import net.kerkeruil.tut_mod.fluid.ModFluids;
 import net.kerkeruil.tut_mod.item.ModItemGroups;
 import net.kerkeruil.tut_mod.item.ModItems;
 import net.kerkeruil.tut_mod.painting.ModPaintings;
@@ -47,6 +48,8 @@ public class TutorialMod implements ModInitializer {
 
 //		Has to be called here?
 		ModParticles.registerParticles();
+		ModFluids.registerFluids();
+
 
 	}
 }
