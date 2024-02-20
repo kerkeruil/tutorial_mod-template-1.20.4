@@ -35,3 +35,6 @@
 /tp @s -2256 ~ 1248
 /effect give @a tutorialmod:slimey
 /kill @a
+/gamemode survival
+/gamemode creative
+/gamemode survival

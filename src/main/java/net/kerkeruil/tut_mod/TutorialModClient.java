@@ -11,6 +11,7 @@ import net.kerkeruil.tut_mod.entities.client.PorcupineModel;
 import net.kerkeruil.tut_mod.entities.client.PorcupineRenderer;
 import net.kerkeruil.tut_mod.entities.layer.ModModelLayers;
 import net.kerkeruil.tut_mod.particle.ModParticles;
+import net.kerkeruil.tut_mod.particle.NuclearSignParticle;
 import net.kerkeruil.tut_mod.particle.PinkGarnetParticle;
 import net.kerkeruil.tut_mod.util.ModModelPredicateProvider;
 import net.minecraft.client.render.RenderLayer;
@@ -32,5 +33,6 @@ public class TutorialModClient implements ClientModInitializer {
         EntityRendererRegistry.register(ModEntities.PORCUPINE, PorcupineRenderer::new);
 
         ParticleFactoryRegistry.getInstance().register(ModParticles.PINK_GARNET_PARTICLE, PinkGarnetParticle.Factory::new);
+        ParticleFactoryRegistry.getInstance().register(ModParticles.NUCLEAR_SIGN_PARTICLE, NuclearSignParticle.Factory::new);
     }
 }

@@ -67,7 +67,7 @@ public class ModBlocks {
             (Block)new HayBlock(AbstractBlock.Settings.create().mapColor(MapColor.YELLOW).instrument(Instrument.BANJO).strength(0.5f).sounds(BlockSoundGroup.GRASS)));
 
     public static final Block BARBED_WIRE_BLOCK = registerBlock("barbed_wire_block",
-            new BarbedWireBlock(FabricBlockSettings.copyOf(Blocks.MAGMA_BLOCK).nonOpaque()));
+            new BarbedWireBlock(FabricBlockSettings.copyOf(Blocks.IRON_BARS).nonOpaque()));
 
 
     private static Block registerBlock(String name, Block block) {

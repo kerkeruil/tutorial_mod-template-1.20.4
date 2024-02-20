@@ -10,6 +10,8 @@ import net.minecraft.util.Identifier;
 public class ModParticles {
     public static final DefaultParticleType PINK_GARNET_PARTICLE =
             registerParticle("pink_garnet_particle", FabricParticleTypes.simple());
+    public static final DefaultParticleType NUCLEAR_SIGN_PARTICLE =
+            registerParticle("nuclear_sign_particle", FabricParticleTypes.simple());
 
 
     private static DefaultParticleType registerParticle(String name, DefaultParticleType particleType) {
