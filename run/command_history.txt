@@ -34,3 +34,4 @@
 /tp @s -2256 ~ 1248\
 /tp @s -2256 ~ 1248
 /effect give @a tutorialmod:slimey
+/kill @a

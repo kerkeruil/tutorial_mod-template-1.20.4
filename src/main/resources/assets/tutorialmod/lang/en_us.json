@@ -75,5 +75,9 @@
   "painting.tutorialmod.world.title": "World",
   "painting.tutorialmod.world.author": "NanoAttack",
 
-  "effect.tutorialmod.slimey": "Slimey"
+  "effect.tutorialmod.slimey": "Slimey",
+  "item.minecraft.potion.effect.slimey_potion": "Slimey Potion",
+  "item.minecraft.splash_potion.effect.slimey_potion": "Splash Slimey Potion",
+  "item.minecraft.lingering_potion.effect.slimey_potion": "Lingering Slimey Potion",
+
 }
