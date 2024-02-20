@@ -13,6 +13,9 @@ public class ModModelPredicateProvider {
                 (stack, world, entity, seed) -> stack.hasNbt() ? 1f : 0f);
 
         registerBow(ModItems.RUBY_BOW);
+
+        ModelPredicateProviderRegistry.register(ModItems.RUBY_SHIELD, new Identifier("blocking"), (stack, world, entity, seed) -> entity != null && entity.isUsingItem() && entity.getActiveItem() == stack ? 1.0f : 0.0f);
+
     }
 
     private static void registerBow(Item bow) {

@@ -18,6 +18,7 @@
 
   "item.tutorialmod.radiation_staff": "Radiation Staff",
   "item.tutorialmod.ruby_bow": "Ruby Bow",
+  "item.tutorialmod.ruby_shield": "Ruby Shield",
 
   "item.tutorialmod.ruby_helmet": "Ruby Helmet",
   "item.tutorialmod.ruby_chestplate": "Ruby Chestplate",
@@ -65,5 +66,14 @@
 
   "block.tutorialmod.gem_empowering_station": "Gem Empowering Station",
   "block.tutorialmod.nuclear_barrel_block": "Nuclear Barrel",
-  "block.tutorialmod.barbed_wire_block": "Barbed Wire"
+  "block.tutorialmod.barbed_wire_block": "Barbed Wire",
+
+  "painting.tutorialmod.saw_them.title": "Saw Them",
+  "painting.tutorialmod.saw_them.author": "NanoAttack",
+  "painting.tutorialmod.shrimp.title": "Shrimp",
+  "painting.tutorialmod.shrimp.author": "NanoAttack",
+  "painting.tutorialmod.world.title": "World",
+  "painting.tutorialmod.world.author": "NanoAttack",
+
+  "effect.tutorialmod.slimey": "Slimey"
 }

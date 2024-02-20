@@ -2,8 +2,8 @@
 	"credit": "Made with Blockbench",
 	"texture_size": [64, 64],
 	"textures": {
-		"0": "garnet_shield",
-		"particle": "garnet_shield"
+		"0": "tutorialmod:item/ruby_shield",
+		"particle": "tutorialmod:item/ruby_shield"
 	},
 	"elements": [
 		{
@@ -214,6 +214,14 @@
 			"color": 0,
 			"nbt": "{}",
 			"children": [9, 10, 11]
+		}
+	],
+	"overrides": [
+		{
+			"predicate": {
+				"blocking": 1
+			},
+			"model": "tutorialmod:item/ruby_shield_blocking"
 		}
 	]
 }

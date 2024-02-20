@@ -45,6 +45,7 @@ public class ModItemGroups {
                         entries.add(ModItems.RUBY_PAXEL);
                         entries.add(ModItems.RADIATION_STAFF);
                         entries.add(ModItems.RUBY_BOW);
+                        entries.add(ModItems.RUBY_SHIELD);
 
 
 //                      Armor

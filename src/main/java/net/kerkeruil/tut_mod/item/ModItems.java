@@ -69,6 +69,7 @@ public class ModItems {
 
     public static final Item RADIATION_STAFF =  registerItem("radiation_staff", new Item(new FabricItemSettings()));
     public static final Item RUBY_BOW =  registerItem("ruby_bow", new BowItem(new FabricItemSettings().maxDamage(500)));
+    public static final Item RUBY_SHIELD =  registerItem("ruby_shield", new ShieldItem(new FabricItemSettings()));
 
     private static void addItemsToIngredientItemGroup(FabricItemGroupEntries entries) {
         entries.add(RUBY);

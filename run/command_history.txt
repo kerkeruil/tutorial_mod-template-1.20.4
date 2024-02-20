@@ -26,3 +26,11 @@
 /home return
 /gamemode survival
 /gamemode creative
+/gamemode survival
+/give @a minecraft:bone_meal 5
+/give @a minecraft:bone_meal 64
+/gamemode creative
+/locate structure minecraft:igloo
+/tp @s -2256 ~ 1248\
+/tp @s -2256 ~ 1248
+/effect give @a tutorialmod:slimey
