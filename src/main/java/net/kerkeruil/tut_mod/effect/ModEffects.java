@@ -16,6 +16,12 @@ public class ModEffects {
                             "7107DE5E-7CE8-4030-940E-514C1F160890", -0.25f,
                             EntityAttributeModifier.Operation.MULTIPLY_TOTAL));
 
+    public static final StatusEffect RADIOACTIVE = registerStatusEffect("radioactive",
+            new RadioactiveEffect(StatusEffectCategory.HARMFUL, 0x36ebab)
+                    .addAttributeModifier(EntityAttributes.GENERIC_ATTACK_SPEED,
+                            "7107DE5E-7CE8-4030-940E-514C1F160891", -0.25f,
+                            EntityAttributeModifier.Operation.MULTIPLY_TOTAL));
+
 
     private static StatusEffect registerStatusEffect(String name, StatusEffect statusEffect) {
         return Registry.register(Registries.STATUS_EFFECT, new Identifier(TutorialMod.mod_ID, name), statusEffect);

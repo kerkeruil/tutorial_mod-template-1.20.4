@@ -38,3 +38,5 @@
 /gamemode survival
 /gamemode creative
 /gamemode survival
+/locate structure minecraft:village_plains
+/tp @s -432 ~ -384

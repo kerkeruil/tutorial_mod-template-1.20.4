@@ -1,0 +1,30 @@
+{
+  "criteria": {
+    "has_pink_garnet": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "tutorialmod:ruby"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "background": "tutorialmod:textures/block/ruby_ore.png",
+    "description": "The Power lies in the Pink Garnet!",
+    "icon": {
+      "item": "tutorialmod:coal_briquette"
+    },
+    "title": "MC Course"
+  },
+  "requirements": [
+    [
+      "has_pink_garnet"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

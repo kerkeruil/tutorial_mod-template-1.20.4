@@ -1,0 +1,32 @@
+{
+  "parent": "tutorialmod:tutorialmod",
+  "criteria": {
+    "has_used_metal_detector": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "tutorialmod:metal_detector"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "background": "tutorialmod:block/pink_garnet_ore",
+    "description": "Batteries not included! (Actually doesn't need batteries)",
+    "icon": {
+      "item": "tutorialmod:metal_detector",
+      "nbt": "{Damage:0}"
+    },
+    "title": "Metal Detector"
+  },
+  "requirements": [
+    [
+      "has_used_metal_detector"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

@@ -35,7 +35,7 @@
   "block.tutorialmod.ruby_block": "Block of Ruby",
   "block.tutorialmod.raw_ruby_block": "Block of Raw Ruby",
   "block.tutorialmod.ruby_ore": "Ruby Ore",
-  "block.tutorialmod.sound_block": "Sound Block",
+  "block.tutorialmod.soundblock": "Sound Block",
 
   "block.tutorialmod.ruby_stairs": "Ruby Stairs",
   "block.tutorialmod.ruby_slab": "Ruby Slab",
@@ -78,6 +78,8 @@
   "effect.tutorialmod.slimey": "Slimey",
   "item.minecraft.potion.effect.slimey_potion": "Slimey Potion",
   "item.minecraft.splash_potion.effect.slimey_potion": "Splash Slimey Potion",
-  "item.minecraft.lingering_potion.effect.slimey_potion": "Lingering Slimey Potion"
+  "item.minecraft.lingering_potion.effect.slimey_potion": "Lingering Slimey Potion",
 
+  "effect.tutorialmod.radioactive": "Radioactive",
+  "entity.minecraft.villager.soundmaster": "Soundmaster"
 }

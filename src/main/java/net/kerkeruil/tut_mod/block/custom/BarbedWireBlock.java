@@ -1,18 +1,17 @@
 package net.kerkeruil.tut_mod.block.custom;
 
-import net.kerkeruil.tut_mod.TutorialMod;
+import net.kerkeruil.tut_mod.effect.ModEffects;
 import net.kerkeruil.tut_mod.particle.ModParticles;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.ShapeContext;
-import net.minecraft.enchantment.EnchantmentHelper;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
+import net.minecraft.entity.effect.StatusEffectInstance;
+import net.minecraft.entity.effect.StatusEffects;
+import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemPlacementContext;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.ItemUsageContext;
-import net.minecraft.particle.BlockStateParticleEffect;
-import net.minecraft.particle.ParticleTypes;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.state.StateManager;
 import net.minecraft.state.property.DirectionProperty;
@@ -61,7 +60,12 @@ public class BarbedWireBlock extends Block {
 
      @Override
     public void onEntityCollision(BlockState state, World world, BlockPos pos, Entity entity) {
-        entity.damage(world.getDamageSources().cactus(), 5.0f);
+        if(entity.isPlayer() && !world.isClient()) {
+            spawnFoundParticles(world, pos);
+            entity.damage(world.getDamageSources().cactus(), 5.0f);
+            PlayerEntity player = (PlayerEntity) entity;
+            player.addStatusEffect(new StatusEffectInstance(ModEffects.RADIOACTIVE, 200, 0));
+        }
     }
     @Nullable
     @Override
