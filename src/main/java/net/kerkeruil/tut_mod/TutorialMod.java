@@ -5,6 +5,7 @@ import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.registry.FuelRegistry;
 import net.kerkeruil.tut_mod.Potion.ModPotions;
 import net.kerkeruil.tut_mod.block.ModBlocks;
+import net.kerkeruil.tut_mod.block.entity.ModBlockEntities;
 import net.kerkeruil.tut_mod.effect.ModEffects;
 import net.kerkeruil.tut_mod.enchantment.ModEnchantments;
 import net.kerkeruil.tut_mod.fluid.ModFluids;
@@ -49,7 +50,7 @@ public class TutorialMod implements ModInitializer {
 //		Has to be called here?
 		ModParticles.registerParticles();
 		ModFluids.registerFluids();
-
+		ModBlockEntities.registerBlockEntities();
 
 	}
 }

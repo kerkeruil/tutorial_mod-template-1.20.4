@@ -12,6 +12,7 @@ import org.spongepowered.asm.mixin.gen.Invoker;
 
 @Mixin(ItemRenderer.class)
 public interface ItemRendererAccessor {
+
     @Accessor("models")
     ItemModels getModels();
 

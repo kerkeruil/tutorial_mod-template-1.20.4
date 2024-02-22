@@ -2,8 +2,8 @@ package net.kerkeruil.tut_mod;
 
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
+import net.fabricmc.fabric.api.client.model.ModelLoadingRegistry;
 import net.fabricmc.fabric.api.client.particle.v1.ParticleFactoryRegistry;
-import net.fabricmc.fabric.api.client.render.fluid.v1.FluidRenderHandler;
 import net.fabricmc.fabric.api.client.render.fluid.v1.FluidRenderHandlerRegistry;
 import net.fabricmc.fabric.api.client.render.fluid.v1.SimpleFluidRenderHandler;
 import net.fabricmc.fabric.api.client.rendering.v1.EntityModelLayerRegistry;
@@ -17,10 +17,13 @@ import net.kerkeruil.tut_mod.fluid.ModFluids;
 import net.kerkeruil.tut_mod.particle.ModParticles;
 import net.kerkeruil.tut_mod.particle.NuclearSignParticle;
 import net.kerkeruil.tut_mod.particle.PinkGarnetParticle;
+import net.kerkeruil.tut_mod.screen.GemEmpoweringScreen;
+import net.kerkeruil.tut_mod.screen.ModScreenHandlers;
 import net.kerkeruil.tut_mod.util.ModModelPredicateProvider;
+import net.minecraft.client.gui.screen.ingame.HandledScreen;
+import net.minecraft.client.gui.screen.ingame.HandledScreens;
 import net.minecraft.client.render.RenderLayer;
-import net.minecraft.client.render.block.FluidRenderer;
-import net.minecraft.registry.Registries;
+import net.minecraft.client.util.ModelIdentifier;
 
 public class TutorialModClient implements ClientModInitializer {
     @Override
@@ -51,9 +54,9 @@ public class TutorialModClient implements ClientModInitializer {
         BlockRenderLayerMap.INSTANCE.putFluids(RenderLayer.getTranslucent(),
                 ModFluids.STILL_SLUDGE, ModFluids.FLOWING_SLUDGE);
 
-        //ClientSpriteRegistryCallback.event(PlayerScreenHandler.BLOCK_ATLAS_TEXTURE).register((atlasTexture, registry) -> {
-        //    registry.register(new Identifier("tutorial:block/custom_fluid_still"));
-        //    registry.register(new Identifier("tutorial:block/custom_fluid_flowing"));
-        //});
+        ModelLoadingRegistry.INSTANCE.registerModelProvider((manager, out) -> new ModelIdentifier(TutorialMod.mod_ID, "radiation_staff_3d", "inventory"));
+
+        HandledScreens.register(ModScreenHandlers.GEM_EMPOWERING_SCREEN_HANDLER, GemEmpoweringScreen::new);
     }
+
 }

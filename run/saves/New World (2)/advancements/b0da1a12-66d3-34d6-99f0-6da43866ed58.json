@@ -1,0 +1,57 @@
+{
+  "tutorialmod:recipes/misc/ruby_button_from_ruby": {
+    "criteria": {
+      "has_ruby": "2024-02-22 16:46:45 +0100"
+    },
+    "done": true
+  },
+  "tutorialmod:recipes/misc/ruby_from_smelting_raw_ruby": {
+    "criteria": {
+      "has_raw_ruby": "2024-02-22 16:46:36 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/crafting_table": {
+    "criteria": {
+      "unlock_right_away": "2024-02-22 16:46:26 +0100"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "minecraft:birch_forest": "2024-02-22 16:46:28 +0100"
+    },
+    "done": false
+  },
+  "tutorialmod:recipes/misc/ruby_from_blasting_raw_ruby": {
+    "criteria": {
+      "has_raw_ruby": "2024-02-22 16:46:36 +0100"
+    },
+    "done": true
+  },
+  "tutorialmod:recipes/misc/raw_ruby": {
+    "criteria": {
+      "has_ruby": "2024-02-22 16:46:45 +0100"
+    },
+    "done": true
+  },
+  "tutorialmod:recipes/decorations/ruby_block": {
+    "criteria": {
+      "has_ruby": "2024-02-22 16:46:45 +0100"
+    },
+    "done": true
+  },
+  "tutorialmod:tutorialmod": {
+    "criteria": {
+      "has_pink_garnet": "2024-02-22 16:46:45 +0100"
+    },
+    "done": true
+  },
+  "tutorialmod:recipes/redstone/ruby_pressure_plate": {
+    "criteria": {
+      "has_ruby": "2024-02-22 16:46:45 +0100"
+    },
+    "done": true
+  },
+  "DataVersion": 3700
+}
