@@ -37,6 +37,7 @@ public class ModItemGroups {
 
                         entries.add(ModBlocks.PETUNIA);
                         entries.add(ModFluids.SOAP_WATER_BUCKET);
+                        entries.add(ModFluids.SLUDGE_BUCKET);
 
 //                      Tools
                         entries.add(ModItems.RUBY_SWORD);

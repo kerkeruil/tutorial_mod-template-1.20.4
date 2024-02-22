@@ -40,3 +40,4 @@
 /gamemode survival
 /locate structure minecraft:village_plains
 /tp @s -432 ~ -384
+/gamemode survival

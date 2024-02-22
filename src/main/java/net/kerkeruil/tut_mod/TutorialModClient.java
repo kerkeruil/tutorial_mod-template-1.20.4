@@ -45,5 +45,15 @@ public class TutorialModClient implements ClientModInitializer {
                 SimpleFluidRenderHandler.coloredWater(0xA1E038D0));
         BlockRenderLayerMap.INSTANCE.putFluids(RenderLayer.getTranslucent(),
                 ModFluids.STILL_SOAP_WATER, ModFluids.FLOWING_SOAP_WATER);
+
+        FluidRenderHandlerRegistry.INSTANCE.register(ModFluids.STILL_SLUDGE, ModFluids.FLOWING_SLUDGE,
+                SimpleFluidRenderHandler.coloredWater(0x32a852));
+        BlockRenderLayerMap.INSTANCE.putFluids(RenderLayer.getTranslucent(),
+                ModFluids.STILL_SLUDGE, ModFluids.FLOWING_SLUDGE);
+
+        //ClientSpriteRegistryCallback.event(PlayerScreenHandler.BLOCK_ATLAS_TEXTURE).register((atlasTexture, registry) -> {
+        //    registry.register(new Identifier("tutorial:block/custom_fluid_still"));
+        //    registry.register(new Identifier("tutorial:block/custom_fluid_flowing"));
+        //});
     }
 }

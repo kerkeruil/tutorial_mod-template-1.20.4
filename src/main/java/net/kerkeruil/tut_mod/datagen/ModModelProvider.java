@@ -71,6 +71,7 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.METAL_DETECTOR, Models.GENERATED);
         itemModelGenerator.register(ModItems.BAR_BRAWL_MUSIC_DISC, Models.GENERATED);
         itemModelGenerator.register(ModFluids.SOAP_WATER_BUCKET, Models.GENERATED);
+        itemModelGenerator.register(ModFluids.SLUDGE_BUCKET, Models.GENERATED);
 
 //        itemModelGenerator.register(ModItems.DATA_TABLET, Models.GENERATED);
 

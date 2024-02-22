@@ -19,6 +19,12 @@ public class ModFluidTagProvider extends FabricTagProvider.FluidTagProvider {
 //      When choosing lava it will behave like water
         this.getOrCreateTagBuilder(FluidTags.WATER)
                 .add(ModFluids.FLOWING_SOAP_WATER)
-                .add(ModFluids.STILL_SOAP_WATER);
+                .add(ModFluids.STILL_SOAP_WATER)
+                .add(ModFluids.FLOWING_SLUDGE)
+                .add(ModFluids.STILL_SLUDGE);
+
+//        this.getOrCreateTagBuilder(FluidTags.LAVA)
+//                .add(ModFluids.FLOWING_SLUDGE)
+//                .add(ModFluids.STILL_SLUDGE);
     }
 }
