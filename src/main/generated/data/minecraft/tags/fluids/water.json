@@ -2,6 +2,8 @@
   "replace": false,
   "values": [
     "tutorialmod:flowing_soap_water",
-    "tutorialmod:soap_water"
+    "tutorialmod:soap_water",
+    "tutorialmod:flowing_sludge",
+    "tutorialmod:sludge"
   ]
 }

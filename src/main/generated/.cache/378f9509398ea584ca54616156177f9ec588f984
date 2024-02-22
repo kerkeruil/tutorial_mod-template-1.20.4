@@ -1,8 +1,8 @@
-// 1.20.4	2024-02-21T19:26:03.7747437	Tutorial Mod/Block Loot Tables
+// 1.20.4	2024-02-22T15:22:30.2184329	Tutorial Mod/Block Loot Tables
 d335d1581e2acd1b2179f84a884643db4c61a07e data\tutorialmod\loot_tables\blocks\ruby_pressure_plate.json
 4f767a7637e8a06ab8dc288b173877b52afc87f4 data\tutorialmod\loot_tables\blocks\ruby_button.json
-6cbee860a058aff1471e8886d74965f5a072e318 data\tutorialmod\loot_tables\blocks\raw_ruby_block.json
 10efab6566ae1503d35bf6302a55b1e7203fa2e6 data\tutorialmod\loot_tables\blocks\ruby_fence.json
+6cbee860a058aff1471e8886d74965f5a072e318 data\tutorialmod\loot_tables\blocks\raw_ruby_block.json
 865399c15f94da491a91fa8bc983868706016198 data\tutorialmod\loot_tables\blocks\ruby_wall.json
 3f950c6a949fc7757f6ee79a0dc95e652cf721fa data\tutorialmod\loot_tables\blocks\ruby_ore.json
 68abcfc2f20ee77534613d1b5562323c11e8343e data\tutorialmod\loot_tables\blocks\nuclear_barrel_block.json
