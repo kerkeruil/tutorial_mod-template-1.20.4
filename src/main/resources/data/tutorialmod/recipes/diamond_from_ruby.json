@@ -1,0 +1,12 @@
+{
+  "type": "tutorialmod:gem_empowering",
+  "ingredients": [
+    {
+      "item": "tutorialmod:ruby"
+    }
+  ],
+  "output": {
+    "item": "minecraft:diamond",
+    "count": 1
+  }
+}

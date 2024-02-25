@@ -13,6 +13,7 @@ import net.kerkeruil.tut_mod.item.ModItemGroups;
 import net.kerkeruil.tut_mod.item.ModItems;
 import net.kerkeruil.tut_mod.painting.ModPaintings;
 import net.kerkeruil.tut_mod.particle.ModParticles;
+import net.kerkeruil.tut_mod.recipe.ModRecipes;
 import net.kerkeruil.tut_mod.sounds.ModSounds;
 import net.kerkeruil.tut_mod.util.ModLootTableModifiers;
 import net.kerkeruil.tut_mod.util.ModRegistries;
@@ -51,6 +52,6 @@ public class TutorialMod implements ModInitializer {
 		ModParticles.registerParticles();
 		ModFluids.registerFluids();
 		ModBlockEntities.registerBlockEntities();
-
+		ModRecipes.registerRecipes();
 	}
 }
