@@ -2,6 +2,7 @@ package net.kerkeruil.tut_mod.block.entity;
 
 
 import net.fabricmc.fabric.api.screenhandler.v1.ExtendedScreenHandlerFactory;
+import net.kerkeruil.tut_mod.block.custom.GemEmpoweringStationBlock;
 import net.kerkeruil.tut_mod.recipe.GemEmpoweringRecipe;
 import net.kerkeruil.tut_mod.screen.GemEmpoweringScreenHandler;
 import net.minecraft.block.BlockState;
@@ -20,6 +21,7 @@ import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.text.Text;
 import net.minecraft.util.collection.DefaultedList;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.Direction;
 import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
 
@@ -167,4 +169,62 @@ public class GemEmpoweringStationBlockEntity extends BlockEntity implements Exte
         return this.getStack(OUTPUT_SLOT).isEmpty() ||
                 this.getStack(OUTPUT_SLOT).getCount() < this.getStack(OUTPUT_SLOT).getMaxCount();
     }
+//
+//    @Override
+//    public boolean canInsert(int slot, ItemStack stack, @Nullable Direction side) {
+//        Direction localDir = this.getWorld().getBlockState(pos).get(GemEmpoweringStationBlock.FACING);
+//
+//        if(side == Direction.DOWN) {
+//            return false;
+//        }
+//
+//        if(side == Direction.UP) {
+//            return slot == INPUT_SLOT;
+//        }
+//
+//        return switch (localDir) {
+//            default -> //NORTH
+//                    side.getOpposite() == Direction.NORTH && slot == INPUT_SLOT ||
+//                            side.getOpposite() == Direction.WEST && slot == INPUT_SLOT;
+//            case EAST ->
+//                    side.rotateYClockwise() == Direction.NORTH && slot == INPUT_SLOT ||
+//                            side.rotateYClockwise() == Direction.WEST && slot == INPUT_SLOT;
+//            case SOUTH ->
+//                    side == Direction.NORTH && slot == INPUT_SLOT ||
+//                            side == Direction.WEST && slot == INPUT_SLOT;
+//            case WEST ->
+//                    side.rotateYCounterclockwise() == Direction.NORTH && slot == INPUT_SLOT ||
+//                            side.rotateYCounterclockwise() == Direction.WEST && slot == INPUT_SLOT;
+//        };
+//    }
+//
+//    @Override
+//    public boolean canExtract(int slot, ItemStack stack, Direction side) {
+//        Direction localDir = this.getWorld().getBlockState(this.pos).get(GemEmpoweringStationBlock.FACING);
+//
+//        if(side == Direction.UP) {
+//            return false;
+//        }
+//
+//        // Down extract 2
+//        if(side == Direction.DOWN) {
+//            return slot == OUTPUT_SLOT;
+//        }
+//
+//        // bottom extract 2
+//        // right extract 2
+//        return switch (localDir) {
+//            default ->  side.getOpposite() == Direction.SOUTH && slot == OUTPUT_SLOT ||
+//                    side.getOpposite() == Direction.EAST && slot == OUTPUT_SLOT;
+//
+//            case EAST -> side.rotateYClockwise() == Direction.SOUTH && slot == OUTPUT_SLOT ||
+//                    side.rotateYClockwise() == Direction.EAST && slot == OUTPUT_SLOT;
+//
+//            case SOUTH ->   side == Direction.SOUTH && slot == OUTPUT_SLOT ||
+//                    side == Direction.EAST && slot == OUTPUT_SLOT;
+//
+//            case WEST -> side.rotateYCounterclockwise() == Direction.SOUTH && slot == OUTPUT_SLOT ||
+//                    side.rotateYCounterclockwise() == Direction.EAST && slot == OUTPUT_SLOT;
+//        };
+//    }
 }
