@@ -23,7 +23,7 @@ public class GemEmpoweringScreen extends HandledScreen<GemEmpoweringScreenHandle
     private static final Identifier TEXTURE =
             new Identifier(TutorialMod.mod_ID, "textures/gui/gem_empowering_station_gui.png");
     private EnergyInfoArea energyInfoArea;
-//    private FluidStackRenderer fluidStackRenderer;
+    private FluidStackRenderer fluidStackRenderer;
 
     public GemEmpoweringScreen(GemEmpoweringScreenHandler handler, PlayerInventory inventory, Text title) {
         super(handler, inventory, title);
@@ -35,13 +35,13 @@ public class GemEmpoweringScreen extends HandledScreen<GemEmpoweringScreenHandle
         titleY = 1000;
         playerInventoryTitleY = 1000;
         assignEnergyInfoArea();
-//        assignFluidStackRenderer();
+        assignFluidStackRenderer();
     }
 
-//    private void assignFluidStackRenderer() {
-//        fluidStackRenderer = new FluidStackRenderer((FluidConstants.BUCKET / 81) * 64, true, 16, 39);
-//    }
-//
+    private void assignFluidStackRenderer() {
+        fluidStackRenderer = new FluidStackRenderer((FluidConstants.BUCKET / 81) * 64, true, 16, 39);
+    }
+
     private void assignEnergyInfoArea() {
         energyInfoArea = new EnergyInfoArea(((width - backgroundWidth) / 2) + 156,
                 ((height - backgroundHeight) / 2 ) + 11, handler.blockEntity.energyStorage);
@@ -53,13 +53,13 @@ public class GemEmpoweringScreen extends HandledScreen<GemEmpoweringScreenHandle
                     Optional.empty(), pMouseX - x, pMouseY - y);
         }
     }
-//
-//    private void renderFluidTooltip(DrawContext context, int mouseX, int mouseY, int x, int y, int offsetX, int offsetY, FluidStackRenderer renderer) {
-//        if(isMouseAboveArea(mouseX, mouseY, x, y, offsetX, offsetY, renderer)) {
-//            context.drawTooltip(Screens.getTextRenderer(this), renderer.getTooltip(handler.blockEntity.fluidStorage, TooltipContext.Default.BASIC),
-//                    Optional.empty(), mouseX - x, mouseY - y);
-//        }
-//    }
+
+    private void renderFluidTooltip(DrawContext context, int mouseX, int mouseY, int x, int y, int offsetX, int offsetY, FluidStackRenderer renderer) {
+        if(isMouseAboveArea(mouseX, mouseY, x, y, offsetX, offsetY, renderer)) {
+            context.drawTooltip(Screens.getTextRenderer(this), renderer.getTooltip(handler.blockEntity.fluidStorage, TooltipContext.Default.BASIC),
+                    Optional.empty(), mouseX - x, mouseY - y);
+        }
+    }
 
     @Override
     protected void drawForeground(DrawContext context, int mouseX, int mouseY) {
@@ -67,7 +67,7 @@ public class GemEmpoweringScreen extends HandledScreen<GemEmpoweringScreenHandle
         int y = (height - backgroundHeight) / 2;
 
         renderEnergyAreaTooltips(context, mouseX, mouseY, x, y);
-//        renderFluidTooltip(context, mouseX, mouseY, x, y, 26, 11, fluidStackRenderer);
+        renderFluidTooltip(context, mouseX, mouseY, x, y, 26, 11, fluidStackRenderer);
     }
 
     @Override
@@ -85,8 +85,8 @@ public class GemEmpoweringScreen extends HandledScreen<GemEmpoweringScreenHandle
         renderProgressArrow(context, x, y);
 
         energyInfoArea.draw(context);
-//        fluidStackRenderer.drawFluid(context, handler.blockEntity.fluidStorage, x + 26, y + 11, 16, 39,
-//                (FluidConstants.BUCKET / 81) * 64);
+        fluidStackRenderer.drawFluid(context, handler.blockEntity.fluidStorage, x + 26, y + 11, 16, 39,
+                (FluidConstants.BUCKET / 81) * 64);
     }
 
     private void renderProgressArrow(DrawContext context, int x, int y) {

@@ -84,5 +84,8 @@
   "item.minecraft.lingering_potion.effect.slimey_potion": "Lingering Slimey Potion",
 
   "effect.tutorialmod.radioactive": "Radioactive",
-  "entity.minecraft.villager.soundmaster": "Soundmaster"
+  "entity.minecraft.villager.soundmaster": "Soundmaster",
+
+  "tutorialmod.tooltip.liquid.amount.with.capacity": "%s / %s mB",
+  "tutorialmod.tooltip.liquid.amount": "%s mB"
 }

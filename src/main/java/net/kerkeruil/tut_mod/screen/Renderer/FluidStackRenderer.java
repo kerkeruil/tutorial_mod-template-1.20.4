@@ -111,6 +111,7 @@ public class FluidStackRenderer {
 
         long amount = fluidStorage.amount;
         if (tooltipMode == TooltipMode.SHOW_AMOUNT_AND_CAPACITY) {
+//                                                                check the lang file for how it is interpreted
             MutableText amountString = Text.translatable("tutorialmod.tooltip.liquid.amount.with.capacity", nf.format(amount), nf.format(capacityMb));
             tooltip.add(amountString.fillStyle(Style.EMPTY.withColor(Formatting.DARK_GRAY)));
         } else if (tooltipMode == TooltipMode.SHOW_AMOUNT) {
