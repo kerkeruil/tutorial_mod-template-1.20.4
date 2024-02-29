@@ -87,5 +87,8 @@
   "entity.minecraft.villager.soundmaster": "Soundmaster",
 
   "tutorialmod.tooltip.liquid.amount.with.capacity": "%s / %s mB",
-  "tutorialmod.tooltip.liquid.amount": "%s mB"
+  "tutorialmod.tooltip.liquid.amount": "%s mB",
+
+  "block.tutorialmod.driftwood_sign": "Driftwood Sign",
+  "block.tutorialmod.driftwood_hanging_sign": "Driftwood Hanging Sign"
 }

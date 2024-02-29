@@ -5,6 +5,8 @@ import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.kerkeruil.tut_mod.TutorialMod;
 import net.kerkeruil.tut_mod.block.custom.*;
 import net.kerkeruil.tut_mod.sounds.ModSounds;
+import net.kerkeruil.tut_mod.util.ModWoodTypes;
+import net.kerkeruil.tut_mod.world.tree.DriftwoodSaplingGenerator;
 import net.minecraft.block.*;
 import net.minecraft.block.enums.Instrument;
 import net.minecraft.entity.effect.StatusEffect;
@@ -68,6 +70,45 @@ public class ModBlocks {
 
     public static final Block BARBED_WIRE_BLOCK = registerBlock("barbed_wire_block",
             new BarbedWireBlock(FabricBlockSettings.copyOf(Blocks.IRON_BARS).nonOpaque()));
+
+
+
+//   Wood
+    public static final Block DRIFTWOOD_LOG = registerBlock("driftwood_log",
+        new PillarBlock(FabricBlockSettings.copyOf(Blocks.OAK_LOG).strength(4f)));
+    public static final Block DRIFTWOOD_WOOD = registerBlock("driftwood_wood",
+            new PillarBlock(FabricBlockSettings.copyOf(Blocks.OAK_WOOD).strength(4f)));
+    public static final Block STRIPPED_DRIFTWOOD_LOG = registerBlock("stripped_driftwood_log",
+            new PillarBlock(FabricBlockSettings.copyOf(Blocks.STRIPPED_OAK_LOG).strength(4f)));
+    public static final Block STRIPPED_DRIFTWOOD_WOOD = registerBlock("stripped_driftwood_wood",
+            new PillarBlock(FabricBlockSettings.copyOf(Blocks.STRIPPED_OAK_WOOD).strength(4f)));
+
+    public static final Block DRIFTWOOD_PLANKS = registerBlock("driftwood_planks",
+            new Block(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS).strength(4f)));
+    public static final Block DRIFTWOOD_LEAVES = registerBlock("driftwood_leaves",
+            new LeavesBlock(FabricBlockSettings.copyOf(Blocks.OAK_LEAVES).strength(1f)));
+
+//    public static final Block DRIFTWOOD_SAPLING = registerBlock("driftwood_sapling_generator",
+//            new SaplingBlock(DriftwoodSaplingGenerator.DRIFTWOOD_SAPLING_GENERATOR,
+//                    FabricBlockSettings.copyOf(Blocks.OAK_SAPLING).strength(1f)));
+
+    public static final Block DRIFTWOOD_SAPLING = registerBlock("driftwood_sapling",
+            new SaplingBlock(DriftwoodSaplingGenerator.DRIFTWOOD_SAPLING_GENERATOR, FabricBlockSettings.copyOf(Blocks.OAK_SAPLING)));
+
+//    YELLOW_MAPLE_SAPLING = register(
+//            "yellow_maple_sapling",
+//                    new class_2473(NATreeGrower.YELLOW_MAPLE,
+//            FabricBlockSettings.copyOf(class_2246.field_10394).mapColor(class_3620.field_16010)));
+
+
+    public static final Block DRIFTWOOD_SIGN = registerBlockWithoutBlockItem("driftwood_sign",
+            new ModStandingSignBlock(ModWoodTypes.DRIFTWOOD, FabricBlockSettings.copyOf(Blocks.ACACIA_SIGN)));
+    public static final Block DRIFTWOOD_WALL_SIGN = registerBlockWithoutBlockItem("driftwood_wall_sign",
+            new ModWallSignBlock(ModWoodTypes.DRIFTWOOD, FabricBlockSettings.copyOf(Blocks.ACACIA_WALL_SIGN)));
+    public static final Block DRIFTWOOD_HANGING_SIGN = registerBlockWithoutBlockItem("driftwood_hanging_sign",
+            new ModHangingSignBlock(ModWoodTypes.DRIFTWOOD, FabricBlockSettings.copyOf(Blocks.ACACIA_HANGING_SIGN)));
+    public static final Block DRIFTWOOD_HANGING_WALL_SIGN = registerBlockWithoutBlockItem("driftwood_hanging_wall_sign",
+            new ModWallHangingSignBlock(ModWoodTypes.DRIFTWOOD, FabricBlockSettings.copyOf(Blocks.ACACIA_WALL_HANGING_SIGN)));
 
 
     private static Block registerBlock(String name, Block block) {

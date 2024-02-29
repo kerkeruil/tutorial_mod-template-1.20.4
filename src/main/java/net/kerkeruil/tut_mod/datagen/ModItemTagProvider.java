@@ -2,6 +2,7 @@ package net.kerkeruil.tut_mod.datagen;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
+import net.kerkeruil.tut_mod.block.ModBlocks;
 import net.kerkeruil.tut_mod.item.ModItems;
 import net.kerkeruil.tut_mod.sounds.ModSounds;
 import net.minecraft.registry.RegistryWrapper;
@@ -31,5 +32,14 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
 
     getOrCreateTagBuilder(ItemTags.MUSIC_DISCS)
             .add(ModItems.BAR_BRAWL_MUSIC_DISC);
+
+//      So they are used for smelting recipes
+        getOrCreateTagBuilder(ItemTags.LOGS_THAT_BURN)
+                .add(ModBlocks.DRIFTWOOD_LOG.asItem(), ModBlocks.DRIFTWOOD_WOOD.asItem(),
+                        ModBlocks.STRIPPED_DRIFTWOOD_LOG.asItem(), ModBlocks.STRIPPED_DRIFTWOOD_WOOD.asItem());
+
+//      For crafting non wood specific recipes
+        getOrCreateTagBuilder(ItemTags.PLANKS)
+                .add(ModBlocks.DRIFTWOOD_PLANKS.asItem());
     }
 }

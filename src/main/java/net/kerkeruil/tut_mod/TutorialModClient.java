@@ -9,20 +9,29 @@ import net.fabricmc.fabric.api.client.render.fluid.v1.SimpleFluidRenderHandler;
 import net.fabricmc.fabric.api.client.rendering.v1.EntityModelLayerRegistry;
 import net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry;
 import net.kerkeruil.tut_mod.block.ModBlocks;
+import net.minecraft.client.render.block.entity.SignBlockEntityRenderer;
+import net.minecraft.client.render.block.entity.HangingSignBlockEntityRenderer;
+
+
+import net.kerkeruil.tut_mod.block.entity.ModBlockEntities;
+import net.kerkeruil.tut_mod.block.entity.renderer.GemEmpoweringBlockEntityRenderer;
 import net.kerkeruil.tut_mod.entities.ModEntities;
 import net.kerkeruil.tut_mod.entities.client.PorcupineModel;
 import net.kerkeruil.tut_mod.entities.client.PorcupineRenderer;
 import net.kerkeruil.tut_mod.entities.layer.ModModelLayers;
 import net.kerkeruil.tut_mod.fluid.ModFluids;
+import net.kerkeruil.tut_mod.networking.ModMessages;
 import net.kerkeruil.tut_mod.particle.ModParticles;
 import net.kerkeruil.tut_mod.particle.NuclearSignParticle;
 import net.kerkeruil.tut_mod.particle.PinkGarnetParticle;
 import net.kerkeruil.tut_mod.screen.GemEmpoweringScreen;
 import net.kerkeruil.tut_mod.screen.ModScreenHandlers;
 import net.kerkeruil.tut_mod.util.ModModelPredicateProvider;
-import net.minecraft.client.gui.screen.ingame.HandledScreen;
+import net.kerkeruil.tut_mod.util.ModWoodTypes;
 import net.minecraft.client.gui.screen.ingame.HandledScreens;
 import net.minecraft.client.render.RenderLayer;
+import net.minecraft.client.render.TexturedRenderLayers;
+import net.minecraft.client.render.block.entity.BlockEntityRendererFactories;
 import net.minecraft.client.util.ModelIdentifier;
 
 public class TutorialModClient implements ClientModInitializer {
@@ -57,6 +66,14 @@ public class TutorialModClient implements ClientModInitializer {
         ModelLoadingRegistry.INSTANCE.registerModelProvider((manager, out) -> new ModelIdentifier(TutorialMod.mod_ID, "radiation_staff_3d", "inventory"));
 
         HandledScreens.register(ModScreenHandlers.GEM_EMPOWERING_SCREEN_HANDLER, GemEmpoweringScreen::new);
-    }
+        ModMessages.registerS2CPackets();
+        BlockEntityRendererFactories.register(ModBlockEntities.GEM_EMPOWERING_STATION_BE, GemEmpoweringBlockEntityRenderer::new);
 
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.DRIFTWOOD_SAPLING, RenderLayer.getCutout());
+        BlockEntityRendererFactories.register(ModBlockEntities.MOD_SIGN_BLOCK_ENTITY, SignBlockEntityRenderer::new);
+        BlockEntityRendererFactories.register(ModBlockEntities.MOD_HANGING_SIGN_BLOCK_ENTITY, HangingSignBlockEntityRenderer::new);
+
+        TexturedRenderLayers.SIGN_TYPE_TEXTURES.put(ModWoodTypes.DRIFTWOOD, TexturedRenderLayers.getSignTextureId(ModWoodTypes.DRIFTWOOD));
+
+    }
 }

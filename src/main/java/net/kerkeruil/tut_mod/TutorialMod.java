@@ -17,6 +17,7 @@ import net.kerkeruil.tut_mod.recipe.ModRecipes;
 import net.kerkeruil.tut_mod.sounds.ModSounds;
 import net.kerkeruil.tut_mod.util.ModLootTableModifiers;
 import net.kerkeruil.tut_mod.util.ModRegistries;
+import net.kerkeruil.tut_mod.world.gen.ModWorldGeneration;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -53,5 +54,7 @@ public class TutorialMod implements ModInitializer {
 		ModFluids.registerFluids();
 		ModBlockEntities.registerBlockEntities();
 		ModRecipes.registerRecipes();
+
+		ModWorldGeneration.generateModWorldGeneration();
 	}
 }

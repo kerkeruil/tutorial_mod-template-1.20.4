@@ -71,6 +71,11 @@ public class ModItems {
     public static final Item RUBY_BOW =  registerItem("ruby_bow", new BowItem(new FabricItemSettings().maxDamage(500)));
     public static final Item RUBY_SHIELD =  registerItem("ruby_shield", new ShieldItem(new FabricItemSettings()));
 
+    public static final Item DRIFTWOOD_SIGN = registerItem("driftwood_sign",
+            new SignItem(new FabricItemSettings().maxCount(16), ModBlocks.DRIFTWOOD_SIGN, ModBlocks.DRIFTWOOD_WALL_SIGN));
+    public static final Item DRIFTWOOD_HANGING_SIGN = registerItem("driftwood_hanging_sign",
+            new HangingSignItem(ModBlocks.DRIFTWOOD_HANGING_SIGN, ModBlocks.DRIFTWOOD_HANGING_WALL_SIGN, new FabricItemSettings().maxCount(16)));
+
     private static void addItemsToIngredientItemGroup(FabricItemGroupEntries entries) {
         entries.add(RUBY);
         entries.add(RAW_RUBY);

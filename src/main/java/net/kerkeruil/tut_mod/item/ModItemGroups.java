@@ -91,6 +91,17 @@ public class ModItemGroups {
 
 //                      Spawn Egg
                         entries.add(ModItems.PORCUPINE_SPAWN_EGG);
+
+//                      Wood
+                        entries.add(ModItems.DRIFTWOOD_SIGN);
+                        entries.add(ModItems.DRIFTWOOD_HANGING_SIGN);
+                        entries.add(ModBlocks.DRIFTWOOD_LOG);
+                        entries.add(ModBlocks.DRIFTWOOD_WOOD);
+                        entries.add(ModBlocks.STRIPPED_DRIFTWOOD_LOG);
+                        entries.add(ModBlocks.STRIPPED_DRIFTWOOD_WOOD);
+                        entries.add(ModBlocks.DRIFTWOOD_PLANKS);
+                        entries.add(ModBlocks.DRIFTWOOD_SAPLING);
+                        entries.add(ModBlocks.DRIFTWOOD_LEAVES);
                     }).build());
 
     public static void registerItemGroups() {

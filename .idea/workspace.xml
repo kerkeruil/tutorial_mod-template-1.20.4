@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="89e9c806-3030-48ed-92cb-9d997c26e3d8" name="Changes" comment="Cleanup and added notworking metaldetector">
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/kerkeruil/tut_mod/block/custom/ModHangingSignBlock.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/kerkeruil/tut_mod/block/custom/ModStandingSignBlock.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/kerkeruil/tut_mod/block/custom/ModWallHangingSignBlock.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/kerkeruil/tut_mod/block/custom/ModWallSignBlock.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/kerkeruil/tut_mod/block/entity/ModHangingSignBlockEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/kerkeruil/tut_mod/block/entity/ModSignBlockEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/kerkeruil/tut_mod/block/entity/renderer/GemEmpoweringBlockEntityRenderer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/kerkeruil/tut_mod/datagen/ModWorldGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/kerkeruil/tut_mod/networking/ModMessages.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/kerkeruil/tut_mod/networking/packet/ItemStackSyncS2CPacket.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/kerkeruil/tut_mod/util/ModWoodTypes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/kerkeruil/tut_mod/world/ModConfiguredFeatures.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/kerkeruil/tut_mod/world/ModFoliagePlacerTypes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/kerkeruil/tut_mod/world/ModPlacedFeatures.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/kerkeruil/tut_mod/world/gen/ModTreeGeneration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/kerkeruil/tut_mod/world/gen/ModWorldGeneration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/kerkeruil/tut_mod/world/tree/DriftwoodSaplingGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/kerkeruil/tut_mod/world/tree/ModTrunkPlacerTypes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/kerkeruil/tut_mod/world/tree/custom/DriftwoodFoliagePlacer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/kerkeruil/tut_mod/world/tree/custom/DriftwoodTrunkPlacer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/tutorialmod/textures/block/driftwood_leaves.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/tutorialmod/textures/block/driftwood_log.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/tutorialmod/textures/block/driftwood_log_top.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/tutorialmod/textures/block/driftwood_planks.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/tutorialmod/textures/block/driftwood_sapling.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/tutorialmod/textures/block/stripped_driftwood_log.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/tutorialmod/textures/block/stripped_driftwood_log_top.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/tutorialmod/textures/entity/signs/driftwood.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/tutorialmod/textures/entity/signs/hanging/driftwood.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/tutorialmod/textures/gui/hanging/driftwood.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/tutorialmod/textures/gui/hanging_signs/driftwood.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/tutorialmod/textures/item/driftwood_hanging_sign.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/tutorialmod/textures/item/driftwood_sign.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations/Minecraft_Client.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations/Minecraft_Datagen.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations/Minecraft_Server.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/config/fabric/indigo-renderer.properties" beforeDir="false" afterPath="$PROJECT_DIR$/run/config/fabric/indigo-renderer.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/config/roughlyenoughitems/hints.json" beforeDir="false" afterPath="$PROJECT_DIR$/run/config/roughlyenoughitems/hints.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/config/roughlyenoughitems/pinyin.properties" beforeDir="false" afterPath="$PROJECT_DIR$/run/config/roughlyenoughitems/pinyin.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/config/roughlyenoughitems/pinyin_double.properties" beforeDir="false" afterPath="$PROJECT_DIR$/run/config/roughlyenoughitems/pinyin_double.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/debug-1.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug-1.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/debug-2.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug-2.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/debug-3.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug-3.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/debug-4.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug-4.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/debug-5.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug-5.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/latest.log" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/latest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/rei.log" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/rei.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/New World (6)/DIM-1/data/raids.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World (6)/DIM-1/data/raids.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/New World (6)/DIM1/data/raids_end.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World (6)/DIM1/data/raids_end.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/New World (6)/data/raids.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World (6)/data/raids.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/New World (6)/entities/r.-1.-1.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World (6)/entities/r.-1.-1.mca" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/New World (6)/entities/r.0.-1.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World (6)/entities/r.0.-1.mca" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/New World (6)/entities/r.0.-2.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World (6)/entities/r.0.-2.mca" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/New World (6)/level.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World (6)/level.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/New World (6)/level.dat_old" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World (6)/level.dat_old" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/New World (6)/region/r.-1.-1.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World (6)/region/r.-1.-1.mca" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/New World (6)/region/r.-1.-2.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World (6)/region/r.-1.-2.mca" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/New World (6)/region/r.-1.0.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World (6)/region/r.-1.0.mca" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/New World (6)/region/r.0.-1.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World (6)/region/r.0.-1.mca" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/New World (6)/region/r.0.-2.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World (6)/region/r.0.-2.mca" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/New World (6)/region/r.0.0.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World (6)/region/r.0.0.mca" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/New World (6)/region/r.1.-1.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World (6)/region/r.1.-1.mca" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/New World (6)/region/r.1.-2.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World (6)/region/r.1.-2.mca" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/New World (6)/region/r.1.0.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World (6)/region/r.1.0.mca" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/usercache.json" beforeDir="false" afterPath="$PROJECT_DIR$/run/usercache.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/generated/.cache/05bae46595fc0bd4302e11de00fed8267f787d53" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/generated/.cache/05bae46595fc0bd4302e11de00fed8267f787d53" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/generated/.cache/130f8a64b4c2c55053b3e123f552da6b92e44921" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/generated/.cache/130f8a64b4c2c55053b3e123f552da6b92e44921" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/generated/.cache/378f9509398ea584ca54616156177f9ec588f984" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/generated/.cache/378f9509398ea584ca54616156177f9ec588f984" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/generated/.cache/80beaa027efbcf9e17d04d48300d7784fb0cb57f" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/generated/.cache/80beaa027efbcf9e17d04d48300d7784fb0cb57f" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/generated/.cache/9a8434e0a66b349ebf2a2fa3ddb6b953a7b65626" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/generated/.cache/9a8434e0a66b349ebf2a2fa3ddb6b953a7b65626" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/generated/.cache/bf8b55c7a3e1253642a8b1063c0b39ff5689945b" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/generated/.cache/bf8b55c7a3e1253642a8b1063c0b39ff5689945b" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/generated/.cache/dfb0a8ea05a472c697eb35080aef6b0f1497af5b" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/generated/.cache/dfb0a8ea05a472c697eb35080aef6b0f1497af5b" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/generated/.cache/e4e32e775410155fd5b39910e36714f200d58a95" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/generated/.cache/e4e32e775410155fd5b39910e36714f200d58a95" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/generated/.cache/f3f56cafc2cbe41709406bb540eb1fca38a90f18" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/generated/.cache/f3f56cafc2cbe41709406bb540eb1fca38a90f18" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/kerkeruil/tut_mod/TutorialMod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/kerkeruil/tut_mod/TutorialMod.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/kerkeruil/tut_mod/TutorialModClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/kerkeruil/tut_mod/TutorialModClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/kerkeruil/tut_mod/TutorialModDataGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/kerkeruil/tut_mod/TutorialModDataGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/kerkeruil/tut_mod/block/ModBlocks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/kerkeruil/tut_mod/block/ModBlocks.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/kerkeruil/tut_mod/block/entity/GemEmpoweringStationBlockEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/kerkeruil/tut_mod/block/entity/GemEmpoweringStationBlockEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/kerkeruil/tut_mod/block/entity/ModBlockEntities.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/kerkeruil/tut_mod/block/entity/ModBlockEntities.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/kerkeruil/tut_mod/datagen/ModBlockTagProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/kerkeruil/tut_mod/datagen/ModBlockTagProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/kerkeruil/tut_mod/datagen/ModItemTagProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/kerkeruil/tut_mod/datagen/ModItemTagProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/kerkeruil/tut_mod/datagen/ModModelProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/kerkeruil/tut_mod/datagen/ModModelProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/kerkeruil/tut_mod/item/ModItemGroups.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/kerkeruil/tut_mod/item/ModItemGroups.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/kerkeruil/tut_mod/item/ModItems.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/kerkeruil/tut_mod/item/ModItems.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/kerkeruil/tut_mod/util/ModRegistries.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/kerkeruil/tut_mod/util/ModRegistries.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/tutorialmod/lang/en_us.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/tutorialmod/lang/en_us.json" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="tutorial_mod-template-1.20.4" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="tutorial_mod-template-1.20.4" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="tutorial_mod-template-1.20.4" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="tutorial_mod-template-1.20.4" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build setup" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="tutorial_mod-template-1.20.4" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="fabric" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="tutorial_mod-template-1.20.4" type="f1a62948:ProjectNode" />
+                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;kerkeruil&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="2e5da156-6cf5-4bf5-bf13-6d374ca3409b" />
+        <option name="url" value="https://github.com/kerkeruil/tutorial_mod-template-1.20.4.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$PROJECT_DIR$/.gradle/loom-cache/minecraftMaven/net/minecraft/minecraft-merged-e7cf13955e/1.20.4-net.fabricmc.yarn.1_20_4.1.20.4+build.3-v2/minecraft-merged-e7cf13955e-1.20.4-net.fabricmc.yarn.1_20_4.1.20.4+build.3-v2-sources.jar!/net/minecraft/data/server/recipe/RecipeProvider.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$PROJECT_DIR$/.gradle/loom-cache/minecraftMaven/net/minecraft/minecraft-merged-e7cf13955e/1.20.4-net.fabricmc.yarn.1_20_4.1.20.4+build.3-v2/minecraft-merged-e7cf13955e-1.20.4-net.fabricmc.yarn.1_20_4.1.20.4+build.3-v2-sources.jar!/net/minecraft/data/server/recipe/VanillaRecipeProvider.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/net/kerkeruil/tut_mod/recipe/GemEmpoweringRecipe.java" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="2cJBEOYOcg9Ft0JDAcXTsklRLlN" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Application.Minecraft Client.executor": "Run",
+    "Application.Minecraft Datagen.executor": "Run",
+    "Gradle.Build tutorial_mod-template-1.20.4.executor": "Run",
+    "Gradle.tutorial_mod-template-1.20.4 [build].executor": "Run",
+    "Gradle.tutorial_mod-template-1.20.4 [genSources].executor": "Run",
+    "Gradle.tutorial_mod-template-1.20.4 [runClient].executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Gebruiker/Desktop/nature_arise_mod",
+    "settings.editor.selected.configurable": "inlay.hints"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Gebruiker\Desktop\tutorial_mod-template-1.20.4\src\main\resources\assets\tutorialmod\textures\gui" />
+      <recent name="C:\Users\Gebruiker\Desktop\tutorial_mod-template-1.20.4\src\main\resources\assets\tutorialmod\textures\item" />
+      <recent name="C:\Users\Gebruiker\Desktop\tutorial_mod-template-1.20.4\src\main\resources\assets\tutorialmod\textures\entity" />
+      <recent name="C:\Users\Gebruiker\Desktop\tutorial_mod-template-1.20.4\src\main\resources\assets\tutorialmod\textures\entity\signs" />
+      <recent name="C:\Users\Gebruiker\Desktop\tutorial_mod-template-1.20.4\src\main\java\net\kerkeruil\tut_mod\util\REIMath" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Gebruiker\Desktop\tutorial_mod-template-1.20.4\src\main\resources\assets\tutorialmod\textures\entity\signs\hanging" />
+      <recent name="C:\Users\Gebruiker\Desktop\tutorial_mod-template-1.20.4\src\main\resources\assets\tutorialmod\textures\block" />
+      <recent name="C:\Users\Gebruiker\Desktop\tutorial_mod-template-1.20.4\src\main\resources\assets\tutorialmod\models\block" />
+      <recent name="C:\Users\Gebruiker\Desktop\tutorial_mod-template-1.20.4\src\main\resources\assets\minecraft\textures\block" />
+      <recent name="C:\Users\Gebruiker\Desktop\tutorial_mod-template-1.20.4\src\main\resources\assets\tutorialmod\models" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="net.kerkeruil.tut_mod.ModEntities" />
+      <recent name="net.kerkeruil.tut_mod.entities" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="net.kerkeruil.tut_mod.fluid" />
+      <recent name="net.kerkeruil.tut_mod.effect" />
+      <recent name="net.kerkeruil.tut_mod.particle" />
+      <recent name="net.kerkeruil.tut_mod.block.custom" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Minecraft Datagen">
+    <configuration name="tutorial_mod-template-1.20.4 [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="tutorial_mod-template-1.20.4 [genSources]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="genSources" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="tutorial_mod-template-1.20.4 [runClient]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="runClient" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.tutorial_mod-template-1.20.4 [build]" />
+        <item itemvalue="Gradle.tutorial_mod-template-1.20.4 [runClient]" />
+        <item itemvalue="Gradle.tutorial_mod-template-1.20.4 [genSources]" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-21.0.2-temurin-21.0.2-4caba194b151-7da56cdf" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="89e9c806-3030-48ed-92cb-9d997c26e3d8" name="Changes" comment="" />
+      <created>1707819690668</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1707819690668</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Cleanup and added notworking metaldetector">
+      <option name="closed" value="true" />
+      <created>1707945628147</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1707945628147</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="dependencySupport" implementationName="java:net.fabricmc:fabric-loader" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Cleanup and added notworking metaldetector" />
+    <option name="LAST_COMMIT_MESSAGE" value="Cleanup and added notworking metaldetector" />
+  </component>
+</project>
